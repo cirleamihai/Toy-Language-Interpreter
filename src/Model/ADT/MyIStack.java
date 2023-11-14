@@ -6,4 +6,6 @@ public interface MyIStack<T> {
     T pop();
 
     boolean isEmpty();
+
+    String toFile();
 }

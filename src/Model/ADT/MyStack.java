@@ -1,11 +1,12 @@
 package Model.ADT;
+
 import java.util.Stack;
 
 public class MyStack<T> implements MyIStack<T> {
     Stack<T> stack;
 
     public MyStack() {
-        stack = new Stack<T>();
+        stack = new Stack<>();
     }
 
     @Override
@@ -24,5 +25,15 @@ public class MyStack<T> implements MyIStack<T> {
 
     public String toString() {
         return stack.toString();
+    }
+
+    public String toFile() {
+        StringBuilder s = new StringBuilder();
+
+        for (int i = stack.size() - 1; i >= 0; --i) {
+            s.append("\n").append(stack.get(i).toString());
+        }
+
+        return s.toString();
     }
 }

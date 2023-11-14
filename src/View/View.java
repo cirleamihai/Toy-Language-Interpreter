@@ -1,9 +1,7 @@
 package View;
 
-import Model.ADT.MyDictionary;
-import Model.ADT.MyIDictionary;
-import Model.ADT.MyList;
-import Model.ADT.MyStack;
+import Exceptions.MyException;
+import Model.ADT.*;
 import Model.Expression.*;
 import Model.Statements.*;
 import Model.Type.*;
@@ -11,6 +9,9 @@ import Model.Value.*;
 import Model.PrgState;
 import Repository.Repo;
 import Controller.Controller;
+
+import java.io.BufferedReader;
+import java.nio.Buffer;
 
 public class View {
     public static void main(String[] args) {
@@ -30,16 +31,30 @@ public class View {
                         new CompStmt(new AssignStmt("a", new ValueExp(new BoolValue(true))),
                                 new CompStmt(new IfStmt(new VarExp("a"), new AssignStmt("v", new ValueExp(new IntValue(2))), new AssignStmt("v", new ValueExp(new IntValue(3)))), new PrintStmt(new VarExp("v"))))));
 
+//        string varf; varf="test.in"; openRFile(varf); int varc; ReadFile(varf, varc);
+//        print(varc); readFile(varf, varc); print(varc); closeRFile(varf)
+        IStmt ex4 = new CompStmt(new VarDeclStmt("varf", new StringType()),
+                new CompStmt(new AssignStmt("varf", new ValueExp(new StringValue(".\\Files\\test.in"))),
+                        new CompStmt(new openRFile(new VarExp("varf")), new CompStmt(new VarDeclStmt("varc", new IntType()),
+                                new CompStmt(new readFile(new VarExp("varf"), "varc"), new CompStmt(new PrintStmt(new VarExp("varc")),
+                                        new CompStmt(new readFile(new VarExp("varf"), "varc"), new CompStmt(new PrintStmt(new VarExp("varc")),
+                                                new closeRFile(new VarExp("varf"))))))))));
 
         MyStack<IStmt> mystack = new MyStack<>();
         MyDictionary<String, Value> mydictionary = new MyDictionary<>();
         MyList<Value> mylist = new MyList<>();
-        PrgState program = new PrgState(mystack, mydictionary, mylist, ex3);
+        FileTable<StringValue, BufferedReader> myFileTable = new FileTable<>();
+        PrgState program = new PrgState(mystack, mydictionary, mylist, ex4, myFileTable);
         PrgState[] prg = new PrgState[1];
         prg[0] = program;
 
-        Repo repository = new Repo(prg);
-        Controller controller = new Controller(repository);
-        controller.allSteps();
+        String logFilePath = ".\\Files\\log.txt";
+        try {
+            Repo repository = new Repo(prg, logFilePath);
+            Controller controller = new Controller(repository);
+            controller.allSteps();
+        } catch (MyException e) {
+            System.out.println(e.getMessage());
+        }
     }
 }

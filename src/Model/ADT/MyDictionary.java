@@ -34,7 +34,7 @@ public class MyDictionary<Key, Val> implements MyIDictionary<Key, Val> {
         return dict.values();
     }
 
-    public MyIDictionary<Key, Val> cloneDict() {
+    public MyIDictionary<Key, Val> deepCopy() {
         MyIDictionary<Key, Val> clone = new MyDictionary<>();
         for (Key key : dict.keySet()) {
             clone.put(key, dict.get(key));
@@ -44,5 +44,13 @@ public class MyDictionary<Key, Val> implements MyIDictionary<Key, Val> {
 
     public String toString() {
         return dict.toString();
+    }
+
+    public String toFile() {
+        StringBuilder s = new StringBuilder();
+        for (Key key : dict.keySet()) {
+            s.append("\n").append(key.toString()).append(" --> ").append(dict.get(key).toString());
+        }
+        return s.toString();
     }
 }

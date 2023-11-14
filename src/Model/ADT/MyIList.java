@@ -14,4 +14,6 @@ public interface MyIList<T> {
     void pop();
 
     int len();
+
+    String toFile();
 }

@@ -15,7 +15,7 @@ public class StringValue implements Value {
     }
 
     public String toString() {
-        return val;
+        return "'" + val + "'";
     }
 
     public Type getType() {
