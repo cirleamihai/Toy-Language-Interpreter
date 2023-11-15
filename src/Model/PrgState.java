@@ -33,7 +33,7 @@ public class PrgState {
     }
 
     public PrgState (MyIStack<IStmt> stk, MyIDictionary<String, Value> symTable,
-                     MyIList<Value> out, IStmt originalProgram, MyIDictionary<StringValue, BufferedReader> fileTable) {
+                     MyIList<Value> out, MyIDictionary<StringValue, BufferedReader> fileTable, IStmt originalProgram) {
         this.stk = stk;
         this.symTable = symTable;
         this.out = out;
