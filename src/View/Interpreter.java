@@ -47,7 +47,7 @@ class Interpreter {
         IStmt ex2 = new CompStmt(new VarDeclStmt("a", new BoolType()),
                 new CompStmt(new VarDeclStmt("v", new IntType()),
                         new CompStmt(new AssignStmt("a", new ValueExp(new BoolValue(true))),
-                                new CompStmt(new IfStmt(new VarExp("a"), new AssignStmt("v", new ValueExp(new IntValue(2))), new AssignStmt("v", new ValueExp(new IntValue(3)))), new PrintStmt(new VarExp("v"))))));
+                                new CompStmt(new IfStmt(new RelationExp(new VarExp("v"), new ValueExp(new IntValue(0)), "=="), new AssignStmt("v", new ValueExp(new IntValue(2))), new AssignStmt("v", new ValueExp(new IntValue(3)))), new PrintStmt(new VarExp("v"))))));
 
         // Creating the program state with stack, SymTbl, etc
         MyStack<IStmt> stack2 = new MyStack<>();
