@@ -74,6 +74,5 @@ public class Controller {
                     RefValue v = (RefValue) e;
                     return v.getAddress();
                 }).collect(Collectors.toList()); // TODO -> read the Lecture 5 to understand Functional Programming
-    })
-//    }
     }
+}
