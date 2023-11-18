@@ -1,6 +1,7 @@
 package Model.Statements;
 
 import Model.ADT.MyIDictionary;
+import Model.ADT.MyIHeap;
 import Model.ADT.MyIList;
 import Exceptions.MyException;
 import Model.Expression.Exp;
@@ -21,7 +22,9 @@ public class PrintStmt implements IStmt {
     public PrgState execute(PrgState state) throws MyException {
         MyIList<Value> outList = state.getOut();
         MyIDictionary<String, Value> symTbl = state.getSymTable();
-        Value val = exp.eval(symTbl);
+        MyIHeap<Integer, Value> heap = state.getHeap();
+
+        Value val = exp.eval(symTbl, heap);
         outList.append(val);
 
         return state;

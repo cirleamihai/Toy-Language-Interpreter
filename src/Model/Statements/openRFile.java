@@ -1,6 +1,7 @@
 package Model.Statements;
 
 import Exceptions.MyException;
+import Model.ADT.MyIHeap;
 import Model.ADT.MyIStack;
 import Model.Expression.Exp;
 import Model.PrgState;
@@ -33,8 +34,9 @@ public class openRFile implements IStmt {
     public PrgState execute(PrgState state) throws MyException {
         MyIDictionary<String, Value> symTbl = state.getSymTable();
         MyIDictionary<StringValue, BufferedReader> fileTable = state.getFileTable();
+        MyIHeap<Integer, Value> heap = state.getHeap();
 
-        StringValue exp_value = (StringValue) exp.eval(symTbl);
+        StringValue exp_value = (StringValue) exp.eval(symTbl, heap);
         if (exp_value.getType().equals(new StringType())) {
             if (!fileTable.contains(exp_value)) {
                 // going to open the file and store the file descriptor in the file table

@@ -2,6 +2,7 @@ package Model.Statements;
 
 import Exceptions.MyException;
 import Model.ADT.MyIDictionary;
+import Model.ADT.MyIHeap;
 import Model.Expression.Exp;
 import Model.PrgState;
 import Model.Type.StringType;
@@ -30,8 +31,9 @@ public class closeRFile implements IStmt {
     public PrgState execute(PrgState state) throws MyException {
         MyIDictionary<StringValue, BufferedReader> fileTable = state.getFileTable();
         MyIDictionary<String, Value> symTable = state.getSymTable();
+        MyIHeap<Integer, Value> heap = state.getHeap();
 
-        StringValue exp_value = (StringValue) exp.eval(symTable);
+        StringValue exp_value = (StringValue) exp.eval(symTable, heap);
         if (exp_value.getType().equals(new StringType())) {
             if (fileTable.contains(exp_value)) {
                 BufferedReader file_descriptor = fileTable.get(exp_value);

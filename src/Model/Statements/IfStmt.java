@@ -1,6 +1,7 @@
 package Model.Statements;
 
 import Model.ADT.MyIDictionary;
+import Model.ADT.MyIHeap;
 import Model.ADT.MyIStack;
 import Exceptions.MyException;
 import Model.PrgState;
@@ -27,8 +28,9 @@ public class IfStmt implements IStmt {
     public PrgState execute(PrgState state) throws MyException {
         MyIStack<IStmt> stk = state.getStk();
         MyIDictionary<String, Value> symTbl = state.getSymTable();
+        MyIHeap<Integer, Value> heap = state.getHeap();
 
-        Value val = exp.eval(symTbl);
+        Value val = exp.eval(symTbl, heap);
         if (val.getType().equals(new BoolType())) {
             BoolValue boolVal = (BoolValue) val;
             if (boolVal.getVal()) {

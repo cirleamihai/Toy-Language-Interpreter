@@ -1,6 +1,7 @@
 package Model;
 
 import Model.ADT.MyIDictionary;
+import Model.ADT.MyIHeap;
 import Model.ADT.MyIList;
 import Model.ADT.MyIStack;
 import Model.Statements.IStmt;
@@ -14,6 +15,7 @@ public class PrgState {
     MyIDictionary<String, Value> symTable;
     MyIList<Value> out;
     MyIDictionary<StringValue, BufferedReader> fileTable;
+    MyIHeap<Integer, Value> heap;
     IStmt originalProgram;
 
     public MyIDictionary<String, Value> getSymTable() {
@@ -32,12 +34,18 @@ public class PrgState {
         return fileTable;
     }
 
-    public PrgState (MyIStack<IStmt> stk, MyIDictionary<String, Value> symTable,
-                     MyIList<Value> out, MyIDictionary<StringValue, BufferedReader> fileTable, IStmt originalProgram) {
+    public MyIHeap<Integer, Value> getHeap() {
+        return heap;
+    }
+
+    public PrgState(MyIStack<IStmt> stk, MyIDictionary<String, Value> symTable,
+                    MyIList<Value> out, MyIDictionary<StringValue, BufferedReader> fileTable,
+                    MyIHeap<Integer, Value> heap, IStmt originalProgram) {
         this.stk = stk;
         this.symTable = symTable;
         this.out = out;
         this.fileTable = fileTable;
+        this.heap = heap;
         this.originalProgram = originalProgram.deepCopy();
         stk.push(originalProgram);
     }
@@ -47,7 +55,8 @@ public class PrgState {
         return "Stack: " + stk.toString() + "\n" +
                 "Symbol Table: " + symTable.toString() + "\n" +
                 "Output List: " + out.toString() + "\n" +
-                "File Table: " + fileTable.toString() + "\n";
+                "File Table: " + fileTable.toString() + "\n" +
+                "Heap: " + heap.toString() + "\n";
     }
 
     public String toFile() {
@@ -59,6 +68,7 @@ public class PrgState {
         return ANSI_BOLD + ANSI_RED + "ExeStack: " + ANSI_RESET + stk.toFile() + "\n" +
                 ANSI_BOLD + ANSI_RED + "SymTable: " + ANSI_RESET + symTable.toFile() + "\n" +
                 ANSI_BOLD + ANSI_RED + "OutList: " + ANSI_RESET + out.toFile() + "\n" +
-                ANSI_BOLD + ANSI_RED + "FileTable: " + ANSI_RESET + fileTable.toFile() + "\n";
+                ANSI_BOLD + ANSI_RED + "FileTable: " + ANSI_RESET + fileTable.toFile() + "\n" +
+                ANSI_BOLD + ANSI_RED + "Heap: " + ANSI_RESET + heap.toFile() + "\n";
     }
 }

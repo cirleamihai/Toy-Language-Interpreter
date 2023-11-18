@@ -2,6 +2,7 @@ package Model.Expression;
 
 import Exceptions.MyException;
 import Model.ADT.MyIDictionary;
+import Model.ADT.MyIHeap;
 import Model.Type.IntType;
 import Model.Value.BoolValue;
 import Model.Value.Value;
@@ -29,9 +30,9 @@ public class RelationExp implements Exp {
     }
 
     @Override
-    public Value eval(MyIDictionary<String, Value> tbl) throws MyException {
-        Value exp1_val = e1.eval(tbl);
-        Value exp2_val = e2.eval(tbl);
+    public Value eval(MyIDictionary<String, Value> tbl, MyIHeap<Integer, Value> heap) throws MyException {
+        Value exp1_val = e1.eval(tbl, heap);
+        Value exp2_val = e2.eval(tbl, heap);
 
         if (exp1_val.getType().equals(new IntType())) {
             if (exp2_val.getType().equals(new IntType())) {
