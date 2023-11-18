@@ -2,7 +2,6 @@ package Model.Statements;
 
 import Exceptions.MyException;
 import Model.ADT.MyIHeap;
-import Model.ADT.MyIStack;
 import Model.Expression.Exp;
 import Model.PrgState;
 import Model.Type.StringType;

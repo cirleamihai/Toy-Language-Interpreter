@@ -1,6 +1,6 @@
 package Model.ADT;
 
-import Model.Value.Value;
+import java.util.Map;
 
 public interface MyIHeap<K, V> {
     K defaultPut(V contentValue);
@@ -24,6 +24,10 @@ public interface MyIHeap<K, V> {
     Iterable<V> getAllValues();
 
     MyIHeap<K, V> deepCopy();
+
+    Map<K, V> getContent();
+
+    void setContent(Map<K, V> newContent);
 
     String toFile();
 }

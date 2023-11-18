@@ -1,6 +1,7 @@
 package Model.ADT;
 
 import java.util.Hashtable;
+import java.util.Map;
 
 public class FileTable<Key, Val> implements MyIDictionary<Key, Val> {
     Hashtable<Key, Val> fileTable;
@@ -45,6 +46,10 @@ public class FileTable<Key, Val> implements MyIDictionary<Key, Val> {
         }
 
         return clone;
+    }
+
+    public Map<Key, Val> getContent() {
+        return fileTable;
     }
 
     public String toString() {

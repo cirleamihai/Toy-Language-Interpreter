@@ -3,6 +3,7 @@ package Model.ADT;
 import Model.Value.Value;
 
 import java.util.HashMap;
+import java.util.Map;
 
 public class Heap implements MyIHeap<Integer, Value> {
     // cannot use generics since address must be of type int
@@ -80,6 +81,25 @@ public class Heap implements MyIHeap<Integer, Value> {
         new_heap.setAddress(address);
 
         return new_heap;
+    }
+
+    @Override
+    public Map<Integer, Value> getContent() {
+        return heap;
+    }
+
+    public void setContent(Map<Integer, Value> newContent) {
+        heap = (HashMap<Integer, Value>) newContent;
+
+        // we need to find the max address
+        int max_address = 0;
+        for (Integer key: getAllKeys()) {
+            if (key > max_address) {
+                max_address = key;
+            }
+        }
+
+        address = max_address;  // and then we replace it
     }
 
     @Override

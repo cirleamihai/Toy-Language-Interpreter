@@ -2,6 +2,7 @@ package Model.ADT;
 
 import java.util.Dictionary;
 import java.util.Hashtable;
+import java.util.Map;
 
 public class MyDictionary<Key, Val> implements MyIDictionary<Key, Val> {
     Hashtable<Key, Val> dict;
@@ -40,6 +41,10 @@ public class MyDictionary<Key, Val> implements MyIDictionary<Key, Val> {
             clone.put(key, dict.get(key));
         }
         return clone;
+    }
+
+    public Map<Key, Val> getContent() {
+        return dict;
     }
 
     public String toString() {
