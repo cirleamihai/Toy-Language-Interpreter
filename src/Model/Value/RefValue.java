@@ -32,4 +32,12 @@ public class RefValue implements Value {
         return new RefValue(address, new RefType(locationType));
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        if (obj instanceof RefValue) {
+            return locationType == ((RefValue) obj).getType();
+        }
+
+        return false;
+    }
 }

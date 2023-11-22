@@ -48,7 +48,13 @@ public class Controller {
                 System.out.println(prg.toString());
                 repo.logPrgStateExec();
 
-                // TODO - add the garbage collector
+                List<Integer> symTableAddr = getAddrFromSymTable(prg.getSymTable().getContent().values());
+//                List<Integer> heapAddr = getAddrFromSymTable(prg.getHeap().getContent().values());
+//                symTableAddr.addAll(heapAddr); // we do the union of the two sets
+
+                prg.getHeap().setContent(garbageCollector(symTableAddr, prg.getHeap().getContent()));
+                System.out.println(prg.toString());
+                repo.logPrgStateExec();
             }
         } catch (MyException e) {
             System.out.println(e.getMessage());
@@ -60,7 +66,7 @@ public class Controller {
         }
     }
 
-    Map<Integer, Value> unsafeGarbageCollector(List<Integer> symTableAddr, Map<Integer, Value> heap) {
+    Map<Integer, Value> garbageCollector(List<Integer> symTableAddr, Map<Integer, Value> heap) {
         return heap.entrySet()
                 .stream()
                 .filter(e -> symTableAddr.contains(e.getKey()))
@@ -73,6 +79,6 @@ public class Controller {
                 .map(e -> {
                     RefValue v = (RefValue) e;
                     return v.getAddress();
-                }).collect(Collectors.toList()); // TODO -> read the Lecture 5 to understand Functional Programming
+                }).collect(Collectors.toList());
     }
 }

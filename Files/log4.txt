@@ -1,0 +1,643 @@
+[1m[31mExeStack: [0m
+(RefType(int) v;(new(v, 20);(RefType(RefType(int)) a;(new(a, v);(new(v, 30);print(rH(rH(a))))))))
+[1m[31mSymTable: [0m
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mExeStack: [0m
+RefType(int) v
+(new(v, 20);(RefType(RefType(int)) a;(new(a, v);(new(v, 30);print(rH(rH(a)))))))
+[1m[31mSymTable: [0m
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mExeStack: [0m
+RefType(int) v
+(new(v, 20);(RefType(RefType(int)) a;(new(a, v);(new(v, 30);print(rH(rH(a)))))))
+[1m[31mSymTable: [0m
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mExeStack: [0m
+(new(v, 20);(RefType(RefType(int)) a;(new(a, v);(new(v, 30);print(rH(rH(a)))))))
+[1m[31mSymTable: [0m
+v --> (0, int)
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mExeStack: [0m
+(new(v, 20);(RefType(RefType(int)) a;(new(a, v);(new(v, 30);print(rH(rH(a)))))))
+[1m[31mSymTable: [0m
+v --> (0, int)
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mExeStack: [0m
+new(v, 20)
+(RefType(RefType(int)) a;(new(a, v);(new(v, 30);print(rH(rH(a))))))
+[1m[31mSymTable: [0m
+v --> (0, int)
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mExeStack: [0m
+new(v, 20)
+(RefType(RefType(int)) a;(new(a, v);(new(v, 30);print(rH(rH(a))))))
+[1m[31mSymTable: [0m
+v --> (0, int)
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mExeStack: [0m
+(RefType(RefType(int)) a;(new(a, v);(new(v, 30);print(rH(rH(a))))))
+[1m[31mSymTable: [0m
+v --> (1, int)
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+1 --> 20
+
+[1m[31mExeStack: [0m
+(RefType(RefType(int)) a;(new(a, v);(new(v, 30);print(rH(rH(a))))))
+[1m[31mSymTable: [0m
+v --> (1, int)
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+1 --> 20
+
+[1m[31mExeStack: [0m
+RefType(RefType(int)) a
+(new(a, v);(new(v, 30);print(rH(rH(a)))))
+[1m[31mSymTable: [0m
+v --> (1, int)
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+1 --> 20
+
+[1m[31mExeStack: [0m
+RefType(RefType(int)) a
+(new(a, v);(new(v, 30);print(rH(rH(a)))))
+[1m[31mSymTable: [0m
+v --> (1, int)
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+1 --> 20
+
+[1m[31mExeStack: [0m
+(new(a, v);(new(v, 30);print(rH(rH(a)))))
+[1m[31mSymTable: [0m
+a --> (0, RefType(int))
+v --> (1, int)
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+1 --> 20
+
+[1m[31mExeStack: [0m
+(new(a, v);(new(v, 30);print(rH(rH(a)))))
+[1m[31mSymTable: [0m
+a --> (0, RefType(int))
+v --> (1, int)
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+1 --> 20
+
+[1m[31mExeStack: [0m
+new(a, v)
+(new(v, 30);print(rH(rH(a))))
+[1m[31mSymTable: [0m
+a --> (0, RefType(int))
+v --> (1, int)
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+1 --> 20
+
+[1m[31mExeStack: [0m
+new(a, v)
+(new(v, 30);print(rH(rH(a))))
+[1m[31mSymTable: [0m
+a --> (0, RefType(int))
+v --> (1, int)
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+1 --> 20
+
+[1m[31mExeStack: [0m
+(new(v, 30);print(rH(rH(a))))
+[1m[31mSymTable: [0m
+a --> (2, RefType(int))
+v --> (1, int)
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+1 --> 20
+2 --> (1, RefType(int))
+
+[1m[31mExeStack: [0m
+(new(v, 30);print(rH(rH(a))))
+[1m[31mSymTable: [0m
+a --> (2, RefType(int))
+v --> (1, int)
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+1 --> 20
+2 --> (1, RefType(int))
+
+[1m[31mExeStack: [0m
+new(v, 30)
+print(rH(rH(a)))
+[1m[31mSymTable: [0m
+a --> (2, RefType(int))
+v --> (1, int)
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+1 --> 20
+2 --> (1, RefType(int))
+
+[1m[31mExeStack: [0m
+new(v, 30)
+print(rH(rH(a)))
+[1m[31mSymTable: [0m
+a --> (2, RefType(int))
+v --> (1, int)
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+1 --> 20
+2 --> (1, RefType(int))
+
+[1m[31mExeStack: [0m
+print(rH(rH(a)))
+[1m[31mSymTable: [0m
+a --> (2, RefType(int))
+v --> (3, int)
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+1 --> 20
+2 --> (1, RefType(int))
+3 --> 30
+
+[1m[31mExeStack: [0m
+print(rH(rH(a)))
+[1m[31mSymTable: [0m
+a --> (2, RefType(int))
+v --> (3, int)
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+1 --> 20
+2 --> (1, RefType(int))
+3 --> 30
+
+[1m[31mExeStack: [0m
+[1m[31mSymTable: [0m
+a --> (2, RefType(int))
+v --> (3, int)
+[1m[31mOutList: [0m
+20
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+1 --> 20
+2 --> (1, RefType(int))
+3 --> 30
+
+[1m[31mExeStack: [0m
+[1m[31mSymTable: [0m
+a --> (2, RefType(int))
+v --> (3, int)
+[1m[31mOutList: [0m
+20
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+1 --> 20
+2 --> (1, RefType(int))
+3 --> 30
+
+[1m[31mExeStack: [0m
+(RefType(int) v;(new(v, 20);(RefType(RefType(int)) a;(new(a, v);(new(v, 30);print(rH(rH(a))))))))
+[1m[31mSymTable: [0m
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mExeStack: [0m
+RefType(int) v
+(new(v, 20);(RefType(RefType(int)) a;(new(a, v);(new(v, 30);print(rH(rH(a)))))))
+[1m[31mSymTable: [0m
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mExeStack: [0m
+RefType(int) v
+(new(v, 20);(RefType(RefType(int)) a;(new(a, v);(new(v, 30);print(rH(rH(a)))))))
+[1m[31mSymTable: [0m
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mExeStack: [0m
+(new(v, 20);(RefType(RefType(int)) a;(new(a, v);(new(v, 30);print(rH(rH(a)))))))
+[1m[31mSymTable: [0m
+v --> (0, int)
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mExeStack: [0m
+(new(v, 20);(RefType(RefType(int)) a;(new(a, v);(new(v, 30);print(rH(rH(a)))))))
+[1m[31mSymTable: [0m
+v --> (0, int)
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mExeStack: [0m
+new(v, 20)
+(RefType(RefType(int)) a;(new(a, v);(new(v, 30);print(rH(rH(a))))))
+[1m[31mSymTable: [0m
+v --> (0, int)
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mExeStack: [0m
+new(v, 20)
+(RefType(RefType(int)) a;(new(a, v);(new(v, 30);print(rH(rH(a))))))
+[1m[31mSymTable: [0m
+v --> (0, int)
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mExeStack: [0m
+(RefType(RefType(int)) a;(new(a, v);(new(v, 30);print(rH(rH(a))))))
+[1m[31mSymTable: [0m
+v --> (1, int)
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+1 --> 20
+
+[1m[31mExeStack: [0m
+(RefType(RefType(int)) a;(new(a, v);(new(v, 30);print(rH(rH(a))))))
+[1m[31mSymTable: [0m
+v --> (1, int)
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+1 --> 20
+
+[1m[31mExeStack: [0m
+RefType(RefType(int)) a
+(new(a, v);(new(v, 30);print(rH(rH(a)))))
+[1m[31mSymTable: [0m
+v --> (1, int)
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+1 --> 20
+
+[1m[31mExeStack: [0m
+RefType(RefType(int)) a
+(new(a, v);(new(v, 30);print(rH(rH(a)))))
+[1m[31mSymTable: [0m
+v --> (1, int)
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+1 --> 20
+
+[1m[31mExeStack: [0m
+(new(a, v);(new(v, 30);print(rH(rH(a)))))
+[1m[31mSymTable: [0m
+a --> (0, RefType(int))
+v --> (1, int)
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+1 --> 20
+
+[1m[31mExeStack: [0m
+(new(a, v);(new(v, 30);print(rH(rH(a)))))
+[1m[31mSymTable: [0m
+a --> (0, RefType(int))
+v --> (1, int)
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+1 --> 20
+
+[1m[31mExeStack: [0m
+new(a, v)
+(new(v, 30);print(rH(rH(a))))
+[1m[31mSymTable: [0m
+a --> (0, RefType(int))
+v --> (1, int)
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+1 --> 20
+
+[1m[31mExeStack: [0m
+new(a, v)
+(new(v, 30);print(rH(rH(a))))
+[1m[31mSymTable: [0m
+a --> (0, RefType(int))
+v --> (1, int)
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+1 --> 20
+
+[1m[31mExeStack: [0m
+(new(v, 30);print(rH(rH(a))))
+[1m[31mSymTable: [0m
+a --> (2, RefType(int))
+v --> (1, int)
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+1 --> 20
+2 --> (1, RefType(int))
+
+[1m[31mExeStack: [0m
+(new(v, 30);print(rH(rH(a))))
+[1m[31mSymTable: [0m
+a --> (2, RefType(int))
+v --> (1, int)
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+1 --> 20
+2 --> (1, RefType(int))
+
+[1m[31mExeStack: [0m
+new(v, 30)
+print(rH(rH(a)))
+[1m[31mSymTable: [0m
+a --> (2, RefType(int))
+v --> (1, int)
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+1 --> 20
+2 --> (1, RefType(int))
+
+[1m[31mExeStack: [0m
+new(v, 30)
+print(rH(rH(a)))
+[1m[31mSymTable: [0m
+a --> (2, RefType(int))
+v --> (1, int)
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+1 --> 20
+2 --> (1, RefType(int))
+
+[1m[31mExeStack: [0m
+print(rH(rH(a)))
+[1m[31mSymTable: [0m
+a --> (2, RefType(int))
+v --> (3, int)
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+1 --> 20
+2 --> (1, RefType(int))
+3 --> 30
+
+[1m[31mExeStack: [0m
+print(rH(rH(a)))
+[1m[31mSymTable: [0m
+a --> (2, RefType(int))
+v --> (3, int)
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+2 --> (1, RefType(int))
+3 --> 30
+
+[1m[31mExeStack: [0m
+(RefType(int) v;(new(v, 20);(RefType(RefType(int)) a;(new(a, v);(new(v, 30);print(rH(rH(a))))))))
+[1m[31mSymTable: [0m
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mExeStack: [0m
+RefType(int) v
+(new(v, 20);(RefType(RefType(int)) a;(new(a, v);(new(v, 30);print(rH(rH(a)))))))
+[1m[31mSymTable: [0m
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mExeStack: [0m
+RefType(int) v
+(new(v, 20);(RefType(RefType(int)) a;(new(a, v);(new(v, 30);print(rH(rH(a)))))))
+[1m[31mSymTable: [0m
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mExeStack: [0m
+(new(v, 20);(RefType(RefType(int)) a;(new(a, v);(new(v, 30);print(rH(rH(a)))))))
+[1m[31mSymTable: [0m
+v --> (0, int)
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mExeStack: [0m
+(new(v, 20);(RefType(RefType(int)) a;(new(a, v);(new(v, 30);print(rH(rH(a)))))))
+[1m[31mSymTable: [0m
+v --> (0, int)
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mExeStack: [0m
+new(v, 20)
+(RefType(RefType(int)) a;(new(a, v);(new(v, 30);print(rH(rH(a))))))
+[1m[31mSymTable: [0m
+v --> (0, int)
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mExeStack: [0m
+new(v, 20)
+(RefType(RefType(int)) a;(new(a, v);(new(v, 30);print(rH(rH(a))))))
+[1m[31mSymTable: [0m
+v --> (0, int)
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mExeStack: [0m
+(RefType(RefType(int)) a;(new(a, v);(new(v, 30);print(rH(rH(a))))))
+[1m[31mSymTable: [0m
+v --> (1, int)
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+1 --> 20
+
+[1m[31mExeStack: [0m
+(RefType(RefType(int)) a;(new(a, v);(new(v, 30);print(rH(rH(a))))))
+[1m[31mSymTable: [0m
+v --> (1, int)
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+1 --> 20
+
+[1m[31mExeStack: [0m
+RefType(RefType(int)) a
+(new(a, v);(new(v, 30);print(rH(rH(a)))))
+[1m[31mSymTable: [0m
+v --> (1, int)
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+1 --> 20
+
+[1m[31mExeStack: [0m
+RefType(RefType(int)) a
+(new(a, v);(new(v, 30);print(rH(rH(a)))))
+[1m[31mSymTable: [0m
+v --> (1, int)
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+1 --> 20
+
+[1m[31mExeStack: [0m
+(new(a, v);(new(v, 30);print(rH(rH(a)))))
+[1m[31mSymTable: [0m
+a --> (0, RefType(int))
+v --> (1, int)
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+1 --> 20
+
+[1m[31mExeStack: [0m
+(new(a, v);(new(v, 30);print(rH(rH(a)))))
+[1m[31mSymTable: [0m
+a --> (0, RefType(int))
+v --> (1, int)
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+1 --> 20
+
+[1m[31mExeStack: [0m
+new(a, v)
+(new(v, 30);print(rH(rH(a))))
+[1m[31mSymTable: [0m
+a --> (0, RefType(int))
+v --> (1, int)
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+1 --> 20
+
+[1m[31mExeStack: [0m
+new(a, v)
+(new(v, 30);print(rH(rH(a))))
+[1m[31mSymTable: [0m
+a --> (0, RefType(int))
+v --> (1, int)
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+1 --> 20
+
+[1m[31mExeStack: [0m
+(new(v, 30);print(rH(rH(a))))
+[1m[31mSymTable: [0m
+a --> (2, RefType(int))
+v --> (1, int)
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+1 --> 20
+2 --> (1, RefType(int))
+
+[1m[31mExeStack: [0m
+(new(v, 30);print(rH(rH(a))))
+[1m[31mSymTable: [0m
+a --> (2, RefType(int))
+v --> (1, int)
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+1 --> 20
+2 --> (1, RefType(int))
+
+[1m[31mExeStack: [0m
+new(v, 30)
+print(rH(rH(a)))
+[1m[31mSymTable: [0m
+a --> (2, RefType(int))
+v --> (1, int)
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+1 --> 20
+2 --> (1, RefType(int))
+
+[1m[31mExeStack: [0m
+new(v, 30)
+print(rH(rH(a)))
+[1m[31mSymTable: [0m
+a --> (2, RefType(int))
+v --> (1, int)
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+1 --> 20
+2 --> (1, RefType(int))
+
+[1m[31mExeStack: [0m
+print(rH(rH(a)))
+[1m[31mSymTable: [0m
+a --> (2, RefType(int))
+v --> (3, int)
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+1 --> 20
+2 --> (1, RefType(int))
+3 --> 30
+
+[1m[31mExeStack: [0m
+print(rH(rH(a)))
+[1m[31mSymTable: [0m
+a --> (2, RefType(int))
+v --> (3, int)
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+2 --> (1, RefType(int))
+3 --> 30
+

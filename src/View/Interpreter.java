@@ -1,6 +1,5 @@
 package View;
 
-import Exceptions.MyException;
 import Model.ADT.*;
 import Model.Expression.*;
 import Model.Statements.*;
@@ -12,7 +11,6 @@ import Repository.Repo;
 import Controller.Controller;
 
 import java.io.BufferedReader;
-import java.nio.Buffer;
 
 class Interpreter {
 
@@ -30,7 +28,8 @@ class Interpreter {
         MyDictionary<String, Value> dict1 = new MyDictionary<>();
         MyList<Value> list1 = new MyList<>();
         FileTable<StringValue, BufferedReader> fileTable1 = new FileTable<>();
-        PrgState prg1 = new PrgState(stack1, dict1, list1, fileTable1, ex1);
+        Heap heap1 = new Heap();
+        PrgState prg1 = new PrgState(stack1, dict1, list1, fileTable1, heap1, ex1);
         PrgState[] program1 = new PrgState[1];
         program1[0] = prg1;
 
@@ -54,7 +53,8 @@ class Interpreter {
         MyDictionary<String, Value> dict2 = new MyDictionary<>();
         MyList<Value> list2 = new MyList<>();
         FileTable<StringValue, BufferedReader> fileTable2 = new FileTable<>();
-        PrgState prg2 = new PrgState(stack2, dict2, list2, fileTable2, ex2);
+        Heap heap2 = new Heap();
+        PrgState prg2 = new PrgState(stack2, dict2, list2, fileTable2, heap2, ex2);
         PrgState[] program2 = new PrgState[1];
         program2[0] = prg2;
 
@@ -82,7 +82,8 @@ class Interpreter {
         MyDictionary<String, Value> dict3 = new MyDictionary<>();
         MyList<Value> list3 = new MyList<>();
         FileTable<StringValue, BufferedReader> fileTable3 = new FileTable<>();
-        PrgState prg3 = new PrgState(stack3, dict3, list3, fileTable3, ex3);
+        Heap heap3 = new Heap();
+        PrgState prg3 = new PrgState(stack3, dict3, list3, fileTable3, heap3, ex3);
         PrgState[] program3 = new PrgState[1];
         program3[0] = prg3;
 
@@ -96,10 +97,38 @@ class Interpreter {
         }
 
         Controller ctrl3 = new Controller(repo3);
+
+//        Ref int v; new(v, 20); Ref Ref int a; new(a, v); new(v, 30); print(rH(rH(a)))
+        IStmt ex4 = new CompStmt(new VarDeclStmt("v", new RefType(new IntType())),
+                new CompStmt(new NewStmt("v", new ValueExp(new IntValue(20))),
+                        new CompStmt(new VarDeclStmt("a", new RefType(new RefType(new IntType()))),
+                                new CompStmt(new NewStmt("a", new VarExp("v")),
+                                        new CompStmt(new NewStmt("v", new ValueExp(new IntValue(30))),
+                                                new PrintStmt(new rH(new rH(new VarExp("a")))))))));
+        // Creating the program state with stack, SymTbl, etc
+        MyStack<IStmt> stack4 = new MyStack<>();
+        MyDictionary<String, Value> dict4 = new MyDictionary<>();
+        MyList<Value> list4 = new MyList<>();
+        FileTable<StringValue, BufferedReader> fileTable4 = new FileTable<>();
+        Heap heap4 = new Heap();
+        PrgState prg4 = new PrgState(stack4, dict4, list4, fileTable4, heap4, ex4);
+        PrgState[] program4 = new PrgState[1];
+        program4[0] = prg4;
+
+        IRepo repo4 = null;
+        try {
+            repo4 = new Repo(program4, ".\\Files\\log4.txt");
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+            System.exit(1);
+        }
+        Controller ctrl4 = new Controller(repo4);
+
         menu.addCommand(new ExitCommand("0", "exit"));
         menu.addCommand(new RunExample("1", ex1.toString(), ctrl1));
         menu.addCommand(new RunExample("2", ex2.toString(), ctrl2));
         menu.addCommand(new RunExample("3", ex3.toString(), ctrl3));
+        menu.addCommand(new RunExample("4", ex4.toString(), ctrl4));
         menu.show();
     }
 }

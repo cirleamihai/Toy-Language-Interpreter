@@ -32,4 +32,9 @@ public class rH implements Exp{  // reads from the heap
     public Exp deepCopy() {
         return new rH(exp.deepCopy());
     }
+
+    @Override
+    public String toString() {
+        return "rH(" + exp.toString() + ")";
+    }
 }

@@ -43,7 +43,8 @@ public class ViewDeprecated {
         MyDictionary<String, Value> mydictionary = new MyDictionary<>();
         MyList<Value> mylist = new MyList<>();
         FileTable<StringValue, BufferedReader> myFileTable = new FileTable<>();
-        PrgState program = new PrgState(mystack, mydictionary, mylist, myFileTable, ex4);
+        Heap myheap = new Heap();
+        PrgState program = new PrgState(mystack, mydictionary, mylist, myFileTable, myheap, ex4);
         PrgState[] prg = new PrgState[1];
         prg[0] = program;
 

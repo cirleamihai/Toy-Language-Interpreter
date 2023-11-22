@@ -6,6 +6,7 @@ import Model.ADT.MyIHeap;
 import Model.Expression.Exp;
 import Model.PrgState;
 import Model.Value.RefValue;
+import Model.Type.RefType;
 import Model.Value.Value;
 
 public class NewStmt implements IStmt{
@@ -30,7 +31,8 @@ public class NewStmt implements IStmt{
         if (!(var_value instanceof RefValue))
             throw new MyException("The variable is not a reference");
 
-        if (var_value.getType().equals(exp_value.getType())) {
+        RefType var_type = (RefType) var_value.getType();
+        if (exp_value.getType().equals(var_type.getInner())) {
             int address = heap.defaultPut(exp_value);
 
             //  Setting the address on the heap for the RefValue

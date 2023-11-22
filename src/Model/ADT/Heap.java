@@ -23,19 +23,19 @@ public class Heap implements MyIHeap<Integer, Value> {
 
     @Override
     public Integer defaultPut(Value contentValue) {
-        heap.put(++address, contentValue); // we always increment the address with 1
+        heap.put(++address, contentValue.deepCopy()); // we always increment the address with 1
 
         return address;
     }
 
     @Override
     public void put(Integer address, Value contentValue) {
-        heap.put(address, contentValue);
+        heap.put(address, contentValue.deepCopy());
     }
 
     @Override
     public void update(Integer address, Value contentValue) {
-        heap.replace(address, contentValue);
+        heap.replace(address, contentValue.deepCopy());
     }
 
     @Override
@@ -100,6 +100,11 @@ public class Heap implements MyIHeap<Integer, Value> {
         }
 
         address = max_address;  // and then we replace it
+    }
+
+    @Override
+    public String toString() {
+        return heap.toString();
     }
 
     @Override
