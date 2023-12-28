@@ -22,7 +22,7 @@ public class CompStmt implements IStmt {
         stk.push(second);
         stk.push(first);
 
-        return state;
+        return null;
     }
 
     public IStmt deepCopy() {

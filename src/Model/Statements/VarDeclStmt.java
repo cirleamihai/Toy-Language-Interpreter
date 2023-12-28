@@ -28,7 +28,7 @@ public class VarDeclStmt implements IStmt {
 
         tbl.put(id, type.defaultValue());
 
-        return state;
+        return null;
     }
 
     public IStmt deepCopy() {

@@ -42,7 +42,7 @@ public class IfStmt implements IStmt {
             throw new MyException("The condition from the IF statement is not a boolean");
         }
 
-        return state;
+        return null;
     }
 
     public IStmt deepCopy() {

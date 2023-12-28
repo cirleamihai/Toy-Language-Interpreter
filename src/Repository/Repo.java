@@ -6,15 +6,19 @@ import Model.PrgState;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Repo implements IRepo {
-    PrgState[] program;
+    List<PrgState> prgList;
+    List<PrgState> ogPrgList;
     PrintWriter logFile;
     String logFilePath;
 
-    public Repo(PrgState[] program, String logFilePath) throws MyException {
-        this.program = program;
+    public Repo(List<PrgState> prgList, String logFilePath) throws MyException {
+        this.prgList = prgList;
         this.logFilePath = logFilePath;
+        this.ogPrgList = prgList;
 
         try {
             logFile = new PrintWriter(new BufferedWriter(new FileWriter(logFilePath, true)));
@@ -23,18 +27,30 @@ public class Repo implements IRepo {
         }
     }
 
-    public PrgState getCrtPrg() {
-        return this.program[0]; // if we do no multi-threading, getCrtPrg() will
-        // always return the first program
+    public void loadOgPrgList() {
+        ogPrgList = new ArrayList<>();
+        ogPrgList.add(prgList.get(0).deepCopy());
     }
 
-    public void logPrgStateExec() throws MyException {
+    public void setOgPrgList() {
+        prgList = ogPrgList;
+    }
+
+    public void logPrgStateExec(PrgState crtProgram) throws MyException {
         try {
-            String file_string = program[0].toFile();
+            String file_string = crtProgram.toFile();
             logFile.println(file_string);
             logFile.flush();
         } catch (Exception e) {
             throw new MyException(e.getMessage());
         }
+    }
+
+    public List<PrgState> getPrgList() {
+        return prgList;
+    }
+
+    public void setPrgList(List<PrgState> list) {
+        prgList = list;
     }
 }

@@ -38,7 +38,7 @@ public class NewStmt implements IStmt{
             //  Setting the address on the heap for the RefValue
             ((RefValue)var_value).setAddress(address);
 
-            return state;
+            return null;
         } else throw new MyException("The types are not equal");
     }
 

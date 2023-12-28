@@ -1,6 +1,7 @@
 package Model.ADT;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class MyList<T> implements MyIList<T> {
     ArrayList<T> list;
@@ -39,6 +40,10 @@ public class MyList<T> implements MyIList<T> {
 
     public T get(int index) {
         return list.get(index);
+    }
+
+    public List<T> getContent() {
+        return list;
     }
 
     public String toFile() {

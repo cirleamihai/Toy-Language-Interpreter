@@ -58,7 +58,7 @@ public class readFile implements IStmt {
                             throw new MyException("Error while reading from file " + filename);
                         }
 
-                        return state;
+                        return null;
                     } else throw new MyException("File " + filename + " is not opened");
 
                 } else throw new MyException("Expression " + exp.toString() + " is not a string");

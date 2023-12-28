@@ -27,7 +27,7 @@ public class PrintStmt implements IStmt {
         Value val = exp.eval(symTbl, heap);
         outList.append(val);
 
-        return state;
+        return null;
     }
 
     public IStmt deepCopy() {

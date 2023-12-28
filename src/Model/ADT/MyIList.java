@@ -1,5 +1,7 @@
 package Model.ADT;
 
+import java.util.List;
+
 public interface MyIList<T> {
     void append(T v);
 
@@ -16,4 +18,6 @@ public interface MyIList<T> {
     int len();
 
     String toFile();
+
+    List<T> getContent();
 }

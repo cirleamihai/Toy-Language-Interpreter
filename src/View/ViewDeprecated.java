@@ -11,6 +11,8 @@ import Repository.Repo;
 import Controller.Controller;
 
 import java.io.BufferedReader;
+import java.util.ArrayList;
+import java.util.List;
 
 public class ViewDeprecated {
     public static void main(String[] args) {
@@ -45,8 +47,8 @@ public class ViewDeprecated {
         FileTable<StringValue, BufferedReader> myFileTable = new FileTable<>();
         Heap myheap = new Heap();
         PrgState program = new PrgState(mystack, mydictionary, mylist, myFileTable, myheap, ex4);
-        PrgState[] prg = new PrgState[1];
-        prg[0] = program;
+        List<PrgState> prg = new ArrayList<>();
+        prg.add(program);
 
         String logFilePath = ".\\Files\\log.txt";
         try {

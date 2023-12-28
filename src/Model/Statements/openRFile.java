@@ -43,7 +43,7 @@ public class openRFile implements IStmt {
                     BufferedReader fileDescriptor = new BufferedReader(new FileReader(exp_value.getVal()));
                     fileTable.put(exp_value, fileDescriptor);
 
-                    return state;
+                    return null;
                 } catch (IOException e) {
                     throw new MyException("Error while reading from file");
                 } catch (Exception e) {

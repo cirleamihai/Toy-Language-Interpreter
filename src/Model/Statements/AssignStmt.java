@@ -36,7 +36,7 @@ public class AssignStmt implements IStmt {
         } else {
             throw new MyException("Variable " + id + " not defined!");
         }
-        return state;
+        return null;
     }
 
     public IStmt deepCopy() {

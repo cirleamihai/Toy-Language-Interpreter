@@ -1,483 +1,4 @@
-[1m[31mExeStack: [0m
-(string varf;(varf='.\Files\test.in';(openRFile(varf);(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf)))))))))
-[1m[31mSymTable: [0m
-[1m[31mOutList: [0m
-[1m[31mFileTable: [0m
-
-[1m[31mExeStack: [0m
-string varf
-(varf='.\Files\test.in';(openRFile(varf);(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))))))
-[1m[31mSymTable: [0m
-[1m[31mOutList: [0m
-[1m[31mFileTable: [0m
-
-[1m[31mExeStack: [0m
-(varf='.\Files\test.in';(openRFile(varf);(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))))))
-[1m[31mSymTable: [0m
-varf --> ''
-[1m[31mOutList: [0m
-[1m[31mFileTable: [0m
-
-[1m[31mExeStack: [0m
-varf='.\Files\test.in'
-(openRFile(varf);(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf)))))))
-[1m[31mSymTable: [0m
-varf --> ''
-[1m[31mOutList: [0m
-[1m[31mFileTable: [0m
-
-[1m[31mExeStack: [0m
-(openRFile(varf);(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf)))))))
-[1m[31mSymTable: [0m
-varf --> '.\Files\test.in'
-[1m[31mOutList: [0m
-[1m[31mFileTable: [0m
-
-[1m[31mExeStack: [0m
-openRFile(varf)
-(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))))
-[1m[31mSymTable: [0m
-varf --> '.\Files\test.in'
-[1m[31mOutList: [0m
-[1m[31mFileTable: [0m
-
-[1m[31mExeStack: [0m
-(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))))
-[1m[31mSymTable: [0m
-varf --> '.\Files\test.in'
-[1m[31mOutList: [0m
-[1m[31mFileTable: [0m
-'.\Files\test.in'
-
-[1m[31mExeStack: [0m
-int varc
-(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf)))))
-[1m[31mSymTable: [0m
-varf --> '.\Files\test.in'
-[1m[31mOutList: [0m
-[1m[31mFileTable: [0m
-'.\Files\test.in'
-
-[1m[31mExeStack: [0m
-(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf)))))
-[1m[31mSymTable: [0m
-varc --> 0
-varf --> '.\Files\test.in'
-[1m[31mOutList: [0m
-[1m[31mFileTable: [0m
-'.\Files\test.in'
-
-[1m[31mExeStack: [0m
-readFile(varf, varc)
-(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))
-[1m[31mSymTable: [0m
-varc --> 0
-varf --> '.\Files\test.in'
-[1m[31mOutList: [0m
-[1m[31mFileTable: [0m
-'.\Files\test.in'
-
-[1m[31mExeStack: [0m
-(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))
-[1m[31mSymTable: [0m
-varc --> 15
-varf --> '.\Files\test.in'
-[1m[31mOutList: [0m
-[1m[31mFileTable: [0m
-'.\Files\test.in'
-
-[1m[31mExeStack: [0m
-print(varc)
-(readFile(varf, varc);(print(varc);closeRFile(varf)))
-[1m[31mSymTable: [0m
-varc --> 15
-varf --> '.\Files\test.in'
-[1m[31mOutList: [0m
-[1m[31mFileTable: [0m
-'.\Files\test.in'
-
-[1m[31mExeStack: [0m
-(readFile(varf, varc);(print(varc);closeRFile(varf)))
-[1m[31mSymTable: [0m
-varc --> 15
-varf --> '.\Files\test.in'
-[1m[31mOutList: [0m
-15
-[1m[31mFileTable: [0m
-'.\Files\test.in'
-
-[1m[31mExeStack: [0m
-readFile(varf, varc)
-(print(varc);closeRFile(varf))
-[1m[31mSymTable: [0m
-varc --> 15
-varf --> '.\Files\test.in'
-[1m[31mOutList: [0m
-15
-[1m[31mFileTable: [0m
-'.\Files\test.in'
-
-[1m[31mExeStack: [0m
-(print(varc);closeRFile(varf))
-[1m[31mSymTable: [0m
-varc --> 50
-varf --> '.\Files\test.in'
-[1m[31mOutList: [0m
-15
-[1m[31mFileTable: [0m
-'.\Files\test.in'
-
-[1m[31mExeStack: [0m
-print(varc)
-closeRFile(varf)
-[1m[31mSymTable: [0m
-varc --> 50
-varf --> '.\Files\test.in'
-[1m[31mOutList: [0m
-15
-[1m[31mFileTable: [0m
-'.\Files\test.in'
-
-[1m[31mExeStack: [0m
-closeRFile(varf)
-[1m[31mSymTable: [0m
-varc --> 50
-varf --> '.\Files\test.in'
-[1m[31mOutList: [0m
-15
-50
-[1m[31mFileTable: [0m
-'.\Files\test.in'
-
-[1m[31mExeStack: [0m
-[1m[31mSymTable: [0m
-varc --> 50
-varf --> '.\Files\test.in'
-[1m[31mOutList: [0m
-15
-50
-[1m[31mFileTable: [0m
-
-[1m[31mExeStack: [0m
-(string varf;(varf='.\Files\test.in';(openRFile(varf);(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf)))))))))
-[1m[31mSymTable: [0m
-[1m[31mOutList: [0m
-[1m[31mFileTable: [0m
-
-[1m[31mExeStack: [0m
-string varf
-(varf='.\Files\test.in';(openRFile(varf);(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))))))
-[1m[31mSymTable: [0m
-[1m[31mOutList: [0m
-[1m[31mFileTable: [0m
-
-[1m[31mExeStack: [0m
-(varf='.\Files\test.in';(openRFile(varf);(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))))))
-[1m[31mSymTable: [0m
-varf --> ''
-[1m[31mOutList: [0m
-[1m[31mFileTable: [0m
-
-[1m[31mExeStack: [0m
-varf='.\Files\test.in'
-(openRFile(varf);(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf)))))))
-[1m[31mSymTable: [0m
-varf --> ''
-[1m[31mOutList: [0m
-[1m[31mFileTable: [0m
-
-[1m[31mExeStack: [0m
-(openRFile(varf);(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf)))))))
-[1m[31mSymTable: [0m
-varf --> '.\Files\test.in'
-[1m[31mOutList: [0m
-[1m[31mFileTable: [0m
-
-[1m[31mExeStack: [0m
-openRFile(varf)
-(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))))
-[1m[31mSymTable: [0m
-varf --> '.\Files\test.in'
-[1m[31mOutList: [0m
-[1m[31mFileTable: [0m
-
-[1m[31mExeStack: [0m
-(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))))
-[1m[31mSymTable: [0m
-varf --> '.\Files\test.in'
-[1m[31mOutList: [0m
-[1m[31mFileTable: [0m
-'.\Files\test.in'
-
-[1m[31mExeStack: [0m
-int varc
-(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf)))))
-[1m[31mSymTable: [0m
-varf --> '.\Files\test.in'
-[1m[31mOutList: [0m
-[1m[31mFileTable: [0m
-'.\Files\test.in'
-
-[1m[31mExeStack: [0m
-(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf)))))
-[1m[31mSymTable: [0m
-varc --> 0
-varf --> '.\Files\test.in'
-[1m[31mOutList: [0m
-[1m[31mFileTable: [0m
-'.\Files\test.in'
-
-[1m[31mExeStack: [0m
-readFile(varf, varc)
-(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))
-[1m[31mSymTable: [0m
-varc --> 0
-varf --> '.\Files\test.in'
-[1m[31mOutList: [0m
-[1m[31mFileTable: [0m
-'.\Files\test.in'
-
-[1m[31mExeStack: [0m
-(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))
-[1m[31mSymTable: [0m
-varc --> 15
-varf --> '.\Files\test.in'
-[1m[31mOutList: [0m
-[1m[31mFileTable: [0m
-'.\Files\test.in'
-
-[1m[31mExeStack: [0m
-print(varc)
-(readFile(varf, varc);(print(varc);closeRFile(varf)))
-[1m[31mSymTable: [0m
-varc --> 15
-varf --> '.\Files\test.in'
-[1m[31mOutList: [0m
-[1m[31mFileTable: [0m
-'.\Files\test.in'
-
-[1m[31mExeStack: [0m
-(readFile(varf, varc);(print(varc);closeRFile(varf)))
-[1m[31mSymTable: [0m
-varc --> 15
-varf --> '.\Files\test.in'
-[1m[31mOutList: [0m
-15
-[1m[31mFileTable: [0m
-'.\Files\test.in'
-
-[1m[31mExeStack: [0m
-readFile(varf, varc)
-(print(varc);closeRFile(varf))
-[1m[31mSymTable: [0m
-varc --> 15
-varf --> '.\Files\test.in'
-[1m[31mOutList: [0m
-15
-[1m[31mFileTable: [0m
-'.\Files\test.in'
-
-[1m[31mExeStack: [0m
-(print(varc);closeRFile(varf))
-[1m[31mSymTable: [0m
-varc --> 50
-varf --> '.\Files\test.in'
-[1m[31mOutList: [0m
-15
-[1m[31mFileTable: [0m
-'.\Files\test.in'
-
-[1m[31mExeStack: [0m
-print(varc)
-closeRFile(varf)
-[1m[31mSymTable: [0m
-varc --> 50
-varf --> '.\Files\test.in'
-[1m[31mOutList: [0m
-15
-[1m[31mFileTable: [0m
-'.\Files\test.in'
-
-[1m[31mExeStack: [0m
-closeRFile(varf)
-[1m[31mSymTable: [0m
-varc --> 50
-varf --> '.\Files\test.in'
-[1m[31mOutList: [0m
-15
-50
-[1m[31mFileTable: [0m
-'.\Files\test.in'
-
-[1m[31mExeStack: [0m
-[1m[31mSymTable: [0m
-varc --> 50
-varf --> '.\Files\test.in'
-[1m[31mOutList: [0m
-15
-50
-[1m[31mFileTable: [0m
-
-[1m[31mExeStack: [0m
-(string varf;(varf='.\Files\test.in';(openRFile(varf);(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf)))))))))
-[1m[31mSymTable: [0m
-[1m[31mOutList: [0m
-[1m[31mFileTable: [0m
-
-[1m[31mExeStack: [0m
-string varf
-(varf='.\Files\test.in';(openRFile(varf);(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))))))
-[1m[31mSymTable: [0m
-[1m[31mOutList: [0m
-[1m[31mFileTable: [0m
-
-[1m[31mExeStack: [0m
-(varf='.\Files\test.in';(openRFile(varf);(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))))))
-[1m[31mSymTable: [0m
-varf --> ''
-[1m[31mOutList: [0m
-[1m[31mFileTable: [0m
-
-[1m[31mExeStack: [0m
-varf='.\Files\test.in'
-(openRFile(varf);(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf)))))))
-[1m[31mSymTable: [0m
-varf --> ''
-[1m[31mOutList: [0m
-[1m[31mFileTable: [0m
-
-[1m[31mExeStack: [0m
-(openRFile(varf);(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf)))))))
-[1m[31mSymTable: [0m
-varf --> '.\Files\test.in'
-[1m[31mOutList: [0m
-[1m[31mFileTable: [0m
-
-[1m[31mExeStack: [0m
-openRFile(varf)
-(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))))
-[1m[31mSymTable: [0m
-varf --> '.\Files\test.in'
-[1m[31mOutList: [0m
-[1m[31mFileTable: [0m
-
-[1m[31mExeStack: [0m
-(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))))
-[1m[31mSymTable: [0m
-varf --> '.\Files\test.in'
-[1m[31mOutList: [0m
-[1m[31mFileTable: [0m
-'.\Files\test.in'
-
-[1m[31mExeStack: [0m
-int varc
-(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf)))))
-[1m[31mSymTable: [0m
-varf --> '.\Files\test.in'
-[1m[31mOutList: [0m
-[1m[31mFileTable: [0m
-'.\Files\test.in'
-
-[1m[31mExeStack: [0m
-(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf)))))
-[1m[31mSymTable: [0m
-varc --> 0
-varf --> '.\Files\test.in'
-[1m[31mOutList: [0m
-[1m[31mFileTable: [0m
-'.\Files\test.in'
-
-[1m[31mExeStack: [0m
-readFile(varf, varc)
-(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))
-[1m[31mSymTable: [0m
-varc --> 0
-varf --> '.\Files\test.in'
-[1m[31mOutList: [0m
-[1m[31mFileTable: [0m
-'.\Files\test.in'
-
-[1m[31mExeStack: [0m
-(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))
-[1m[31mSymTable: [0m
-varc --> 15
-varf --> '.\Files\test.in'
-[1m[31mOutList: [0m
-[1m[31mFileTable: [0m
-'.\Files\test.in'
-
-[1m[31mExeStack: [0m
-print(varc)
-(readFile(varf, varc);(print(varc);closeRFile(varf)))
-[1m[31mSymTable: [0m
-varc --> 15
-varf --> '.\Files\test.in'
-[1m[31mOutList: [0m
-[1m[31mFileTable: [0m
-'.\Files\test.in'
-
-[1m[31mExeStack: [0m
-(readFile(varf, varc);(print(varc);closeRFile(varf)))
-[1m[31mSymTable: [0m
-varc --> 15
-varf --> '.\Files\test.in'
-[1m[31mOutList: [0m
-15
-[1m[31mFileTable: [0m
-'.\Files\test.in'
-
-[1m[31mExeStack: [0m
-readFile(varf, varc)
-(print(varc);closeRFile(varf))
-[1m[31mSymTable: [0m
-varc --> 15
-varf --> '.\Files\test.in'
-[1m[31mOutList: [0m
-15
-[1m[31mFileTable: [0m
-'.\Files\test.in'
-
-[1m[31mExeStack: [0m
-(print(varc);closeRFile(varf))
-[1m[31mSymTable: [0m
-varc --> 50
-varf --> '.\Files\test.in'
-[1m[31mOutList: [0m
-15
-[1m[31mFileTable: [0m
-'.\Files\test.in'
-
-[1m[31mExeStack: [0m
-print(varc)
-closeRFile(varf)
-[1m[31mSymTable: [0m
-varc --> 50
-varf --> '.\Files\test.in'
-[1m[31mOutList: [0m
-15
-[1m[31mFileTable: [0m
-'.\Files\test.in'
-
-[1m[31mExeStack: [0m
-closeRFile(varf)
-[1m[31mSymTable: [0m
-varc --> 50
-varf --> '.\Files\test.in'
-[1m[31mOutList: [0m
-15
-50
-[1m[31mFileTable: [0m
-'.\Files\test.in'
-
-[1m[31mExeStack: [0m
-[1m[31mSymTable: [0m
-varc --> 50
-varf --> '.\Files\test.in'
-[1m[31mOutList: [0m
-15
-50
-[1m[31mFileTable: [0m
-
+[1m[31mProgram ID: [0m3
 [1m[31mExeStack: [0m
 (string varf;(varf='.\Files\test.in';(openRFile(varf);(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf)))))))))
 [1m[31mSymTable: [0m
@@ -485,6 +6,7 @@ varf --> '.\Files\test.in'
 [1m[31mFileTable: [0m
 [1m[31mHeap: [0m
 
+[1m[31mProgram ID: [0m3
 [1m[31mExeStack: [0m
 string varf
 (varf='.\Files\test.in';(openRFile(varf);(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))))))
@@ -493,6 +15,7 @@ string varf
 [1m[31mFileTable: [0m
 [1m[31mHeap: [0m
 
+[1m[31mProgram ID: [0m3
 [1m[31mExeStack: [0m
 string varf
 (varf='.\Files\test.in';(openRFile(varf);(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))))))
@@ -501,6 +24,7 @@ string varf
 [1m[31mFileTable: [0m
 [1m[31mHeap: [0m
 
+[1m[31mProgram ID: [0m3
 [1m[31mExeStack: [0m
 (varf='.\Files\test.in';(openRFile(varf);(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))))))
 [1m[31mSymTable: [0m
@@ -509,6 +33,7 @@ varf --> ''
 [1m[31mFileTable: [0m
 [1m[31mHeap: [0m
 
+[1m[31mProgram ID: [0m3
 [1m[31mExeStack: [0m
 (varf='.\Files\test.in';(openRFile(varf);(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))))))
 [1m[31mSymTable: [0m
@@ -517,6 +42,7 @@ varf --> ''
 [1m[31mFileTable: [0m
 [1m[31mHeap: [0m
 
+[1m[31mProgram ID: [0m3
 [1m[31mExeStack: [0m
 varf='.\Files\test.in'
 (openRFile(varf);(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf)))))))
@@ -526,6 +52,7 @@ varf --> ''
 [1m[31mFileTable: [0m
 [1m[31mHeap: [0m
 
+[1m[31mProgram ID: [0m3
 [1m[31mExeStack: [0m
 varf='.\Files\test.in'
 (openRFile(varf);(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf)))))))
@@ -535,6 +62,7 @@ varf --> ''
 [1m[31mFileTable: [0m
 [1m[31mHeap: [0m
 
+[1m[31mProgram ID: [0m3
 [1m[31mExeStack: [0m
 (openRFile(varf);(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf)))))))
 [1m[31mSymTable: [0m
@@ -543,6 +71,7 @@ varf --> '.\Files\test.in'
 [1m[31mFileTable: [0m
 [1m[31mHeap: [0m
 
+[1m[31mProgram ID: [0m3
 [1m[31mExeStack: [0m
 (openRFile(varf);(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf)))))))
 [1m[31mSymTable: [0m
@@ -551,6 +80,7 @@ varf --> '.\Files\test.in'
 [1m[31mFileTable: [0m
 [1m[31mHeap: [0m
 
+[1m[31mProgram ID: [0m3
 [1m[31mExeStack: [0m
 openRFile(varf)
 (int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))))
@@ -560,6 +90,7 @@ varf --> '.\Files\test.in'
 [1m[31mFileTable: [0m
 [1m[31mHeap: [0m
 
+[1m[31mProgram ID: [0m3
 [1m[31mExeStack: [0m
 openRFile(varf)
 (int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))))
@@ -569,6 +100,7 @@ varf --> '.\Files\test.in'
 [1m[31mFileTable: [0m
 [1m[31mHeap: [0m
 
+[1m[31mProgram ID: [0m3
 [1m[31mExeStack: [0m
 (int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))))
 [1m[31mSymTable: [0m
@@ -578,6 +110,7 @@ varf --> '.\Files\test.in'
 '.\Files\test.in'
 [1m[31mHeap: [0m
 
+[1m[31mProgram ID: [0m3
 [1m[31mExeStack: [0m
 (int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))))
 [1m[31mSymTable: [0m
@@ -587,6 +120,7 @@ varf --> '.\Files\test.in'
 '.\Files\test.in'
 [1m[31mHeap: [0m
 
+[1m[31mProgram ID: [0m3
 [1m[31mExeStack: [0m
 int varc
 (readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf)))))
@@ -597,6 +131,7 @@ varf --> '.\Files\test.in'
 '.\Files\test.in'
 [1m[31mHeap: [0m
 
+[1m[31mProgram ID: [0m3
 [1m[31mExeStack: [0m
 int varc
 (readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf)))))
@@ -607,6 +142,7 @@ varf --> '.\Files\test.in'
 '.\Files\test.in'
 [1m[31mHeap: [0m
 
+[1m[31mProgram ID: [0m3
 [1m[31mExeStack: [0m
 (readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf)))))
 [1m[31mSymTable: [0m
@@ -617,6 +153,7 @@ varf --> '.\Files\test.in'
 '.\Files\test.in'
 [1m[31mHeap: [0m
 
+[1m[31mProgram ID: [0m3
 [1m[31mExeStack: [0m
 (readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf)))))
 [1m[31mSymTable: [0m
@@ -627,6 +164,7 @@ varf --> '.\Files\test.in'
 '.\Files\test.in'
 [1m[31mHeap: [0m
 
+[1m[31mProgram ID: [0m3
 [1m[31mExeStack: [0m
 readFile(varf, varc)
 (print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))
@@ -638,6 +176,7 @@ varf --> '.\Files\test.in'
 '.\Files\test.in'
 [1m[31mHeap: [0m
 
+[1m[31mProgram ID: [0m3
 [1m[31mExeStack: [0m
 readFile(varf, varc)
 (print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))
@@ -649,6 +188,7 @@ varf --> '.\Files\test.in'
 '.\Files\test.in'
 [1m[31mHeap: [0m
 
+[1m[31mProgram ID: [0m3
 [1m[31mExeStack: [0m
 (print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))
 [1m[31mSymTable: [0m
@@ -659,6 +199,7 @@ varf --> '.\Files\test.in'
 '.\Files\test.in'
 [1m[31mHeap: [0m
 
+[1m[31mProgram ID: [0m3
 [1m[31mExeStack: [0m
 (print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))
 [1m[31mSymTable: [0m
@@ -669,6 +210,7 @@ varf --> '.\Files\test.in'
 '.\Files\test.in'
 [1m[31mHeap: [0m
 
+[1m[31mProgram ID: [0m3
 [1m[31mExeStack: [0m
 print(varc)
 (readFile(varf, varc);(print(varc);closeRFile(varf)))
@@ -680,6 +222,7 @@ varf --> '.\Files\test.in'
 '.\Files\test.in'
 [1m[31mHeap: [0m
 
+[1m[31mProgram ID: [0m3
 [1m[31mExeStack: [0m
 print(varc)
 (readFile(varf, varc);(print(varc);closeRFile(varf)))
@@ -691,6 +234,7 @@ varf --> '.\Files\test.in'
 '.\Files\test.in'
 [1m[31mHeap: [0m
 
+[1m[31mProgram ID: [0m3
 [1m[31mExeStack: [0m
 (readFile(varf, varc);(print(varc);closeRFile(varf)))
 [1m[31mSymTable: [0m
@@ -702,6 +246,7 @@ varf --> '.\Files\test.in'
 '.\Files\test.in'
 [1m[31mHeap: [0m
 
+[1m[31mProgram ID: [0m3
 [1m[31mExeStack: [0m
 (readFile(varf, varc);(print(varc);closeRFile(varf)))
 [1m[31mSymTable: [0m
@@ -713,6 +258,7 @@ varf --> '.\Files\test.in'
 '.\Files\test.in'
 [1m[31mHeap: [0m
 
+[1m[31mProgram ID: [0m3
 [1m[31mExeStack: [0m
 readFile(varf, varc)
 (print(varc);closeRFile(varf))
@@ -725,6 +271,7 @@ varf --> '.\Files\test.in'
 '.\Files\test.in'
 [1m[31mHeap: [0m
 
+[1m[31mProgram ID: [0m3
 [1m[31mExeStack: [0m
 readFile(varf, varc)
 (print(varc);closeRFile(varf))
@@ -737,6 +284,7 @@ varf --> '.\Files\test.in'
 '.\Files\test.in'
 [1m[31mHeap: [0m
 
+[1m[31mProgram ID: [0m3
 [1m[31mExeStack: [0m
 (print(varc);closeRFile(varf))
 [1m[31mSymTable: [0m
@@ -748,6 +296,7 @@ varf --> '.\Files\test.in'
 '.\Files\test.in'
 [1m[31mHeap: [0m
 
+[1m[31mProgram ID: [0m3
 [1m[31mExeStack: [0m
 (print(varc);closeRFile(varf))
 [1m[31mSymTable: [0m
@@ -759,6 +308,7 @@ varf --> '.\Files\test.in'
 '.\Files\test.in'
 [1m[31mHeap: [0m
 
+[1m[31mProgram ID: [0m3
 [1m[31mExeStack: [0m
 print(varc)
 closeRFile(varf)
@@ -771,6 +321,7 @@ varf --> '.\Files\test.in'
 '.\Files\test.in'
 [1m[31mHeap: [0m
 
+[1m[31mProgram ID: [0m3
 [1m[31mExeStack: [0m
 print(varc)
 closeRFile(varf)
@@ -783,6 +334,7 @@ varf --> '.\Files\test.in'
 '.\Files\test.in'
 [1m[31mHeap: [0m
 
+[1m[31mProgram ID: [0m3
 [1m[31mExeStack: [0m
 closeRFile(varf)
 [1m[31mSymTable: [0m
@@ -795,6 +347,7 @@ varf --> '.\Files\test.in'
 '.\Files\test.in'
 [1m[31mHeap: [0m
 
+[1m[31mProgram ID: [0m3
 [1m[31mExeStack: [0m
 closeRFile(varf)
 [1m[31mSymTable: [0m
@@ -807,6 +360,7 @@ varf --> '.\Files\test.in'
 '.\Files\test.in'
 [1m[31mHeap: [0m
 
+[1m[31mProgram ID: [0m3
 [1m[31mExeStack: [0m
 [1m[31mSymTable: [0m
 varc --> 50
@@ -817,6 +371,1861 @@ varf --> '.\Files\test.in'
 [1m[31mFileTable: [0m
 [1m[31mHeap: [0m
 
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+(string varf;(varf='.\Files\test.in';(openRFile(varf);(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf)))))))))
+[1m[31mSymTable: [0m
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+string varf
+(varf='.\Files\test.in';(openRFile(varf);(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))))))
+[1m[31mSymTable: [0m
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+string varf
+(varf='.\Files\test.in';(openRFile(varf);(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))))))
+[1m[31mSymTable: [0m
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+(varf='.\Files\test.in';(openRFile(varf);(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))))))
+[1m[31mSymTable: [0m
+varf --> ''
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+(varf='.\Files\test.in';(openRFile(varf);(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))))))
+[1m[31mSymTable: [0m
+varf --> ''
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+varf='.\Files\test.in'
+(openRFile(varf);(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf)))))))
+[1m[31mSymTable: [0m
+varf --> ''
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+varf='.\Files\test.in'
+(openRFile(varf);(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf)))))))
+[1m[31mSymTable: [0m
+varf --> ''
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+(openRFile(varf);(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf)))))))
+[1m[31mSymTable: [0m
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+(openRFile(varf);(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf)))))))
+[1m[31mSymTable: [0m
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+openRFile(varf)
+(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))))
+[1m[31mSymTable: [0m
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+openRFile(varf)
+(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))))
+[1m[31mSymTable: [0m
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))))
+[1m[31mSymTable: [0m
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))))
+[1m[31mSymTable: [0m
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+int varc
+(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf)))))
+[1m[31mSymTable: [0m
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+int varc
+(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf)))))
+[1m[31mSymTable: [0m
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf)))))
+[1m[31mSymTable: [0m
+varc --> 0
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf)))))
+[1m[31mSymTable: [0m
+varc --> 0
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+readFile(varf, varc)
+(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))
+[1m[31mSymTable: [0m
+varc --> 0
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+readFile(varf, varc)
+(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))
+[1m[31mSymTable: [0m
+varc --> 0
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))
+[1m[31mSymTable: [0m
+varc --> 15
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))
+[1m[31mSymTable: [0m
+varc --> 15
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+print(varc)
+(readFile(varf, varc);(print(varc);closeRFile(varf)))
+[1m[31mSymTable: [0m
+varc --> 15
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+print(varc)
+(readFile(varf, varc);(print(varc);closeRFile(varf)))
+[1m[31mSymTable: [0m
+varc --> 15
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+(readFile(varf, varc);(print(varc);closeRFile(varf)))
+[1m[31mSymTable: [0m
+varc --> 15
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+15
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+(readFile(varf, varc);(print(varc);closeRFile(varf)))
+[1m[31mSymTable: [0m
+varc --> 15
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+15
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+readFile(varf, varc)
+(print(varc);closeRFile(varf))
+[1m[31mSymTable: [0m
+varc --> 15
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+15
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+readFile(varf, varc)
+(print(varc);closeRFile(varf))
+[1m[31mSymTable: [0m
+varc --> 15
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+15
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+(print(varc);closeRFile(varf))
+[1m[31mSymTable: [0m
+varc --> 50
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+15
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+(print(varc);closeRFile(varf))
+[1m[31mSymTable: [0m
+varc --> 50
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+15
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+print(varc)
+closeRFile(varf)
+[1m[31mSymTable: [0m
+varc --> 50
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+15
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+print(varc)
+closeRFile(varf)
+[1m[31mSymTable: [0m
+varc --> 50
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+15
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+closeRFile(varf)
+[1m[31mSymTable: [0m
+varc --> 50
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+15
+50
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+closeRFile(varf)
+[1m[31mSymTable: [0m
+varc --> 50
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+15
+50
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+[1m[31mSymTable: [0m
+varc --> 50
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+15
+50
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+(string varf;(varf='.\Files\test.in';(openRFile(varf);(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf)))))))))
+[1m[31mSymTable: [0m
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+string varf
+(varf='.\Files\test.in';(openRFile(varf);(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))))))
+[1m[31mSymTable: [0m
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+string varf
+(varf='.\Files\test.in';(openRFile(varf);(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))))))
+[1m[31mSymTable: [0m
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+(varf='.\Files\test.in';(openRFile(varf);(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))))))
+[1m[31mSymTable: [0m
+varf --> ''
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+(varf='.\Files\test.in';(openRFile(varf);(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))))))
+[1m[31mSymTable: [0m
+varf --> ''
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+varf='.\Files\test.in'
+(openRFile(varf);(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf)))))))
+[1m[31mSymTable: [0m
+varf --> ''
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+varf='.\Files\test.in'
+(openRFile(varf);(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf)))))))
+[1m[31mSymTable: [0m
+varf --> ''
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+(openRFile(varf);(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf)))))))
+[1m[31mSymTable: [0m
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+(openRFile(varf);(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf)))))))
+[1m[31mSymTable: [0m
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+openRFile(varf)
+(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))))
+[1m[31mSymTable: [0m
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+openRFile(varf)
+(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))))
+[1m[31mSymTable: [0m
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))))
+[1m[31mSymTable: [0m
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))))
+[1m[31mSymTable: [0m
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+int varc
+(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf)))))
+[1m[31mSymTable: [0m
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+int varc
+(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf)))))
+[1m[31mSymTable: [0m
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf)))))
+[1m[31mSymTable: [0m
+varc --> 0
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf)))))
+[1m[31mSymTable: [0m
+varc --> 0
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+readFile(varf, varc)
+(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))
+[1m[31mSymTable: [0m
+varc --> 0
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+readFile(varf, varc)
+(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))
+[1m[31mSymTable: [0m
+varc --> 0
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))
+[1m[31mSymTable: [0m
+varc --> 15
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))
+[1m[31mSymTable: [0m
+varc --> 15
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+print(varc)
+(readFile(varf, varc);(print(varc);closeRFile(varf)))
+[1m[31mSymTable: [0m
+varc --> 15
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+print(varc)
+(readFile(varf, varc);(print(varc);closeRFile(varf)))
+[1m[31mSymTable: [0m
+varc --> 15
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+(readFile(varf, varc);(print(varc);closeRFile(varf)))
+[1m[31mSymTable: [0m
+varc --> 15
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+15
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+(readFile(varf, varc);(print(varc);closeRFile(varf)))
+[1m[31mSymTable: [0m
+varc --> 15
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+15
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+readFile(varf, varc)
+(print(varc);closeRFile(varf))
+[1m[31mSymTable: [0m
+varc --> 15
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+15
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+readFile(varf, varc)
+(print(varc);closeRFile(varf))
+[1m[31mSymTable: [0m
+varc --> 15
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+15
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+(print(varc);closeRFile(varf))
+[1m[31mSymTable: [0m
+varc --> 50
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+15
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+(print(varc);closeRFile(varf))
+[1m[31mSymTable: [0m
+varc --> 50
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+15
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+print(varc)
+closeRFile(varf)
+[1m[31mSymTable: [0m
+varc --> 50
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+15
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+print(varc)
+closeRFile(varf)
+[1m[31mSymTable: [0m
+varc --> 50
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+15
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+closeRFile(varf)
+[1m[31mSymTable: [0m
+varc --> 50
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+15
+50
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+closeRFile(varf)
+[1m[31mSymTable: [0m
+varc --> 50
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+15
+50
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+[1m[31mSymTable: [0m
+varc --> 50
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+15
+50
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+(string varf;(varf='.\Files\test.in';(openRFile(varf);(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf)))))))))
+[1m[31mSymTable: [0m
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+string varf
+(varf='.\Files\test.in';(openRFile(varf);(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))))))
+[1m[31mSymTable: [0m
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+string varf
+(varf='.\Files\test.in';(openRFile(varf);(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))))))
+[1m[31mSymTable: [0m
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+(varf='.\Files\test.in';(openRFile(varf);(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))))))
+[1m[31mSymTable: [0m
+varf --> ''
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+(varf='.\Files\test.in';(openRFile(varf);(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))))))
+[1m[31mSymTable: [0m
+varf --> ''
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+varf='.\Files\test.in'
+(openRFile(varf);(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf)))))))
+[1m[31mSymTable: [0m
+varf --> ''
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+varf='.\Files\test.in'
+(openRFile(varf);(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf)))))))
+[1m[31mSymTable: [0m
+varf --> ''
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+(openRFile(varf);(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf)))))))
+[1m[31mSymTable: [0m
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+(openRFile(varf);(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf)))))))
+[1m[31mSymTable: [0m
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+openRFile(varf)
+(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))))
+[1m[31mSymTable: [0m
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+openRFile(varf)
+(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))))
+[1m[31mSymTable: [0m
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))))
+[1m[31mSymTable: [0m
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))))
+[1m[31mSymTable: [0m
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+int varc
+(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf)))))
+[1m[31mSymTable: [0m
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+int varc
+(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf)))))
+[1m[31mSymTable: [0m
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf)))))
+[1m[31mSymTable: [0m
+varc --> 0
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf)))))
+[1m[31mSymTable: [0m
+varc --> 0
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+readFile(varf, varc)
+(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))
+[1m[31mSymTable: [0m
+varc --> 0
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+readFile(varf, varc)
+(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))
+[1m[31mSymTable: [0m
+varc --> 0
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))
+[1m[31mSymTable: [0m
+varc --> 15
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))
+[1m[31mSymTable: [0m
+varc --> 15
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+print(varc)
+(readFile(varf, varc);(print(varc);closeRFile(varf)))
+[1m[31mSymTable: [0m
+varc --> 15
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+print(varc)
+(readFile(varf, varc);(print(varc);closeRFile(varf)))
+[1m[31mSymTable: [0m
+varc --> 15
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+(readFile(varf, varc);(print(varc);closeRFile(varf)))
+[1m[31mSymTable: [0m
+varc --> 15
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+15
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+(readFile(varf, varc);(print(varc);closeRFile(varf)))
+[1m[31mSymTable: [0m
+varc --> 15
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+15
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+readFile(varf, varc)
+(print(varc);closeRFile(varf))
+[1m[31mSymTable: [0m
+varc --> 15
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+15
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+readFile(varf, varc)
+(print(varc);closeRFile(varf))
+[1m[31mSymTable: [0m
+varc --> 15
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+15
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+(print(varc);closeRFile(varf))
+[1m[31mSymTable: [0m
+varc --> 50
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+15
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+(print(varc);closeRFile(varf))
+[1m[31mSymTable: [0m
+varc --> 50
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+15
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+print(varc)
+closeRFile(varf)
+[1m[31mSymTable: [0m
+varc --> 50
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+15
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+print(varc)
+closeRFile(varf)
+[1m[31mSymTable: [0m
+varc --> 50
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+15
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+closeRFile(varf)
+[1m[31mSymTable: [0m
+varc --> 50
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+15
+50
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+closeRFile(varf)
+[1m[31mSymTable: [0m
+varc --> 50
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+15
+50
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m3
+[1m[31mExeStack: [0m
+[1m[31mSymTable: [0m
+varc --> 50
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+15
+50
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m34
+[1m[31mExeStack: [0m
+(string varf;(varf='.\Files\test.in';(openRFile(varf);(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf)))))))))
+[1m[31mSymTable: [0m
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m34
+[1m[31mExeStack: [0m
+string varf
+(varf='.\Files\test.in';(openRFile(varf);(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))))))
+[1m[31mSymTable: [0m
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m34
+[1m[31mExeStack: [0m
+string varf
+(varf='.\Files\test.in';(openRFile(varf);(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))))))
+[1m[31mSymTable: [0m
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m34
+[1m[31mExeStack: [0m
+(varf='.\Files\test.in';(openRFile(varf);(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))))))
+[1m[31mSymTable: [0m
+varf --> ''
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m34
+[1m[31mExeStack: [0m
+(varf='.\Files\test.in';(openRFile(varf);(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))))))
+[1m[31mSymTable: [0m
+varf --> ''
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m34
+[1m[31mExeStack: [0m
+varf='.\Files\test.in'
+(openRFile(varf);(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf)))))))
+[1m[31mSymTable: [0m
+varf --> ''
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m34
+[1m[31mExeStack: [0m
+varf='.\Files\test.in'
+(openRFile(varf);(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf)))))))
+[1m[31mSymTable: [0m
+varf --> ''
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m34
+[1m[31mExeStack: [0m
+(openRFile(varf);(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf)))))))
+[1m[31mSymTable: [0m
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m34
+[1m[31mExeStack: [0m
+(openRFile(varf);(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf)))))))
+[1m[31mSymTable: [0m
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m34
+[1m[31mExeStack: [0m
+openRFile(varf)
+(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))))
+[1m[31mSymTable: [0m
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m34
+[1m[31mExeStack: [0m
+openRFile(varf)
+(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))))
+[1m[31mSymTable: [0m
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m34
+[1m[31mExeStack: [0m
+(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))))
+[1m[31mSymTable: [0m
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m34
+[1m[31mExeStack: [0m
+(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))))
+[1m[31mSymTable: [0m
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m34
+[1m[31mExeStack: [0m
+int varc
+(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf)))))
+[1m[31mSymTable: [0m
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m34
+[1m[31mExeStack: [0m
+int varc
+(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf)))))
+[1m[31mSymTable: [0m
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m34
+[1m[31mExeStack: [0m
+(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf)))))
+[1m[31mSymTable: [0m
+varc --> 0
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m34
+[1m[31mExeStack: [0m
+(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf)))))
+[1m[31mSymTable: [0m
+varc --> 0
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m34
+[1m[31mExeStack: [0m
+readFile(varf, varc)
+(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))
+[1m[31mSymTable: [0m
+varc --> 0
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m34
+[1m[31mExeStack: [0m
+readFile(varf, varc)
+(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))
+[1m[31mSymTable: [0m
+varc --> 0
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m34
+[1m[31mExeStack: [0m
+(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))
+[1m[31mSymTable: [0m
+varc --> 15
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m34
+[1m[31mExeStack: [0m
+(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))
+[1m[31mSymTable: [0m
+varc --> 15
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m34
+[1m[31mExeStack: [0m
+print(varc)
+(readFile(varf, varc);(print(varc);closeRFile(varf)))
+[1m[31mSymTable: [0m
+varc --> 15
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m34
+[1m[31mExeStack: [0m
+print(varc)
+(readFile(varf, varc);(print(varc);closeRFile(varf)))
+[1m[31mSymTable: [0m
+varc --> 15
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m34
+[1m[31mExeStack: [0m
+(readFile(varf, varc);(print(varc);closeRFile(varf)))
+[1m[31mSymTable: [0m
+varc --> 15
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+15
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m34
+[1m[31mExeStack: [0m
+(readFile(varf, varc);(print(varc);closeRFile(varf)))
+[1m[31mSymTable: [0m
+varc --> 15
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+15
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m34
+[1m[31mExeStack: [0m
+readFile(varf, varc)
+(print(varc);closeRFile(varf))
+[1m[31mSymTable: [0m
+varc --> 15
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+15
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m34
+[1m[31mExeStack: [0m
+readFile(varf, varc)
+(print(varc);closeRFile(varf))
+[1m[31mSymTable: [0m
+varc --> 15
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+15
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m34
+[1m[31mExeStack: [0m
+(print(varc);closeRFile(varf))
+[1m[31mSymTable: [0m
+varc --> 50
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+15
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m34
+[1m[31mExeStack: [0m
+(print(varc);closeRFile(varf))
+[1m[31mSymTable: [0m
+varc --> 50
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+15
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m34
+[1m[31mExeStack: [0m
+print(varc)
+closeRFile(varf)
+[1m[31mSymTable: [0m
+varc --> 50
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+15
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m34
+[1m[31mExeStack: [0m
+print(varc)
+closeRFile(varf)
+[1m[31mSymTable: [0m
+varc --> 50
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+15
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m34
+[1m[31mExeStack: [0m
+closeRFile(varf)
+[1m[31mSymTable: [0m
+varc --> 50
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+15
+50
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m34
+[1m[31mExeStack: [0m
+closeRFile(varf)
+[1m[31mSymTable: [0m
+varc --> 50
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+15
+50
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m34
+[1m[31mExeStack: [0m
+[1m[31mSymTable: [0m
+varc --> 50
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+15
+50
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m39
+[1m[31mExeStack: [0m
+(string varf;(varf='.\Files\test.in';(openRFile(varf);(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf)))))))))
+[1m[31mSymTable: [0m
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m39
+[1m[31mExeStack: [0m
+string varf
+(varf='.\Files\test.in';(openRFile(varf);(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))))))
+[1m[31mSymTable: [0m
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m39
+[1m[31mExeStack: [0m
+string varf
+(varf='.\Files\test.in';(openRFile(varf);(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))))))
+[1m[31mSymTable: [0m
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m39
+[1m[31mExeStack: [0m
+(varf='.\Files\test.in';(openRFile(varf);(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))))))
+[1m[31mSymTable: [0m
+varf --> ''
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m39
+[1m[31mExeStack: [0m
+(varf='.\Files\test.in';(openRFile(varf);(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))))))
+[1m[31mSymTable: [0m
+varf --> ''
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m39
+[1m[31mExeStack: [0m
+varf='.\Files\test.in'
+(openRFile(varf);(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf)))))))
+[1m[31mSymTable: [0m
+varf --> ''
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m39
+[1m[31mExeStack: [0m
+varf='.\Files\test.in'
+(openRFile(varf);(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf)))))))
+[1m[31mSymTable: [0m
+varf --> ''
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m39
+[1m[31mExeStack: [0m
+(openRFile(varf);(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf)))))))
+[1m[31mSymTable: [0m
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m39
+[1m[31mExeStack: [0m
+(openRFile(varf);(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf)))))))
+[1m[31mSymTable: [0m
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m39
+[1m[31mExeStack: [0m
+openRFile(varf)
+(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))))
+[1m[31mSymTable: [0m
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m39
+[1m[31mExeStack: [0m
+openRFile(varf)
+(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))))
+[1m[31mSymTable: [0m
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m39
+[1m[31mExeStack: [0m
+(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))))
+[1m[31mSymTable: [0m
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m39
+[1m[31mExeStack: [0m
+(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))))
+[1m[31mSymTable: [0m
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m39
+[1m[31mExeStack: [0m
+int varc
+(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf)))))
+[1m[31mSymTable: [0m
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m39
+[1m[31mExeStack: [0m
+int varc
+(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf)))))
+[1m[31mSymTable: [0m
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m39
+[1m[31mExeStack: [0m
+(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf)))))
+[1m[31mSymTable: [0m
+varc --> 0
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m39
+[1m[31mExeStack: [0m
+(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf)))))
+[1m[31mSymTable: [0m
+varc --> 0
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m39
+[1m[31mExeStack: [0m
+readFile(varf, varc)
+(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))
+[1m[31mSymTable: [0m
+varc --> 0
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m39
+[1m[31mExeStack: [0m
+readFile(varf, varc)
+(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))
+[1m[31mSymTable: [0m
+varc --> 0
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m39
+[1m[31mExeStack: [0m
+(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))
+[1m[31mSymTable: [0m
+varc --> 15
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m39
+[1m[31mExeStack: [0m
+(print(varc);(readFile(varf, varc);(print(varc);closeRFile(varf))))
+[1m[31mSymTable: [0m
+varc --> 15
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m39
+[1m[31mExeStack: [0m
+print(varc)
+(readFile(varf, varc);(print(varc);closeRFile(varf)))
+[1m[31mSymTable: [0m
+varc --> 15
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m39
+[1m[31mExeStack: [0m
+print(varc)
+(readFile(varf, varc);(print(varc);closeRFile(varf)))
+[1m[31mSymTable: [0m
+varc --> 15
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m39
+[1m[31mExeStack: [0m
+(readFile(varf, varc);(print(varc);closeRFile(varf)))
+[1m[31mSymTable: [0m
+varc --> 15
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+15
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m39
+[1m[31mExeStack: [0m
+(readFile(varf, varc);(print(varc);closeRFile(varf)))
+[1m[31mSymTable: [0m
+varc --> 15
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+15
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m39
+[1m[31mExeStack: [0m
+readFile(varf, varc)
+(print(varc);closeRFile(varf))
+[1m[31mSymTable: [0m
+varc --> 15
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+15
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m39
+[1m[31mExeStack: [0m
+readFile(varf, varc)
+(print(varc);closeRFile(varf))
+[1m[31mSymTable: [0m
+varc --> 15
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+15
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m39
+[1m[31mExeStack: [0m
+(print(varc);closeRFile(varf))
+[1m[31mSymTable: [0m
+varc --> 50
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+15
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m39
+[1m[31mExeStack: [0m
+(print(varc);closeRFile(varf))
+[1m[31mSymTable: [0m
+varc --> 50
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+15
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m39
+[1m[31mExeStack: [0m
+print(varc)
+closeRFile(varf)
+[1m[31mSymTable: [0m
+varc --> 50
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+15
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m39
+[1m[31mExeStack: [0m
+print(varc)
+closeRFile(varf)
+[1m[31mSymTable: [0m
+varc --> 50
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+15
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m39
+[1m[31mExeStack: [0m
+closeRFile(varf)
+[1m[31mSymTable: [0m
+varc --> 50
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+15
+50
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m39
+[1m[31mExeStack: [0m
+closeRFile(varf)
+[1m[31mSymTable: [0m
+varc --> 50
+varf --> '.\Files\test.in'
+[1m[31mOutList: [0m
+15
+50
+[1m[31mFileTable: [0m
+'.\Files\test.in'
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m39
 [1m[31mExeStack: [0m
 [1m[31mSymTable: [0m
 varc --> 50

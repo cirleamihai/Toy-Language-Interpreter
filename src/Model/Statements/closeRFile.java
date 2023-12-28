@@ -41,7 +41,7 @@ public class closeRFile implements IStmt {
                     file_descriptor.close();
                     fileTable.remove(exp_value);
 
-                    return state;
+                    return null;
                 } catch (Exception e) {
                     throw new MyException("Error while closing the file");
                 }

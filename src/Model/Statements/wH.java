@@ -44,7 +44,7 @@ public class wH implements IStmt { // Heap Writing
         // we update the heap value
         heap.update(address, exp_value);
 
-        return state;
+        return null;
     }
 
     @Override

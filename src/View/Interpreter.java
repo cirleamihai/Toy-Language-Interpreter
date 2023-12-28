@@ -11,6 +11,8 @@ import Repository.Repo;
 import Controller.Controller;
 
 import java.io.BufferedReader;
+import java.util.ArrayList;
+import java.util.List;
 
 class Interpreter {
 
@@ -30,8 +32,8 @@ class Interpreter {
         FileTable<StringValue, BufferedReader> fileTable1 = new FileTable<>();
         Heap heap1 = new Heap();
         PrgState prg1 = new PrgState(stack1, dict1, list1, fileTable1, heap1, ex1);
-        PrgState[] program1 = new PrgState[1];
-        program1[0] = prg1;
+        List<PrgState> program1 = new ArrayList<>();
+        program1.add(prg1);
 
         IRepo repo1 = null;
         try {
@@ -55,8 +57,8 @@ class Interpreter {
         FileTable<StringValue, BufferedReader> fileTable2 = new FileTable<>();
         Heap heap2 = new Heap();
         PrgState prg2 = new PrgState(stack2, dict2, list2, fileTable2, heap2, ex2);
-        PrgState[] program2 = new PrgState[1];
-        program2[0] = prg2;
+        List<PrgState> program2 = new ArrayList<>();
+        program2.add(prg2);
 
         IRepo repo2 = null;
         try {
@@ -84,8 +86,8 @@ class Interpreter {
         FileTable<StringValue, BufferedReader> fileTable3 = new FileTable<>();
         Heap heap3 = new Heap();
         PrgState prg3 = new PrgState(stack3, dict3, list3, fileTable3, heap3, ex3);
-        PrgState[] program3 = new PrgState[1];
-        program3[0] = prg3;
+        List<PrgState> program3 = new ArrayList<>();
+        program3.add(prg3);
 
 
         IRepo repo3 = null;
@@ -112,8 +114,8 @@ class Interpreter {
         FileTable<StringValue, BufferedReader> fileTable4 = new FileTable<>();
         Heap heap4 = new Heap();
         PrgState prg4 = new PrgState(stack4, dict4, list4, fileTable4, heap4, ex4);
-        PrgState[] program4 = new PrgState[1];
-        program4[0] = prg4;
+        List<PrgState> program4 = new ArrayList<>();
+        program4.add(prg4);
 
         IRepo repo4 = null;
         try {
@@ -124,11 +126,45 @@ class Interpreter {
         }
         Controller ctrl4 = new Controller(repo4);
 
+//        int v; Ref int a; v=10; new(a,22);
+//        fork(wH(a,30);v=32;print(v);print(rH(a)));
+//        print(v);print(rH(a))
+        IStmt ex5 = new CompStmt(new VarDeclStmt("v", new IntType()),
+                new CompStmt(new VarDeclStmt("a", new RefType(new IntType())),
+                        new CompStmt(new AssignStmt("v", new ValueExp(new IntValue(10))),
+                                new CompStmt(new NewStmt("a", new ValueExp(new IntValue(22))),
+                                        new CompStmt(new forkStmt(new CompStmt(new wH("a", new ValueExp(new IntValue(30))),
+                                                new CompStmt(new AssignStmt("v", new ValueExp(new IntValue(32))),
+                                                        new CompStmt(new PrintStmt(new VarExp("v")),
+                                                                new PrintStmt(new rH(new VarExp("a"))))))),
+                                                new CompStmt(new PrintStmt(new VarExp("v")),
+                                                        new PrintStmt(new rH(new VarExp("a")))))))));
+
+        // Creating the program state with stack, SymTbl, etc
+        MyStack<IStmt> stack5 = new MyStack<>();
+        MyDictionary<String, Value> dict5 = new MyDictionary<>();
+        MyList<Value> list5 = new MyList<>();
+        FileTable<StringValue, BufferedReader> fileTable5 = new FileTable<>();
+        Heap heap5 = new Heap();
+        PrgState prg5 = new PrgState(stack5, dict5, list5, fileTable5, heap5, ex5);
+        List<PrgState> program5 = new ArrayList<>();
+        program5.add(prg5);
+
+        IRepo repo5 = null;
+        try {
+            repo5 = new Repo(program5, ".\\Files\\log5.txt");
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+            System.exit(1);
+        }
+        Controller ctrl5 = new Controller(repo5);
+
         menu.addCommand(new ExitCommand("0", "exit"));
         menu.addCommand(new RunExample("1", ex1.toString(), ctrl1));
         menu.addCommand(new RunExample("2", ex2.toString(), ctrl2));
         menu.addCommand(new RunExample("3", ex3.toString(), ctrl3));
         menu.addCommand(new RunExample("4", ex4.toString(), ctrl4));
+        menu.addCommand(new RunExample("5", ex5.toString(), ctrl5));
         menu.show();
     }
 }

@@ -1,23 +1,48 @@
+[1m[31mProgram ID: [0m2
 [1m[31mExeStack: [0m
 (bool a;(int v;(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v)))))
 [1m[31mSymTable: [0m
 [1m[31mOutList: [0m
 [1m[31mFileTable: [0m
+[1m[31mHeap: [0m
 
+[1m[31mProgram ID: [0m2
 [1m[31mExeStack: [0m
 bool a
 (int v;(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v))))
 [1m[31mSymTable: [0m
 [1m[31mOutList: [0m
 [1m[31mFileTable: [0m
+[1m[31mHeap: [0m
 
+[1m[31mProgram ID: [0m2
+[1m[31mExeStack: [0m
+bool a
+(int v;(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v))))
+[1m[31mSymTable: [0m
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m2
 [1m[31mExeStack: [0m
 (int v;(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v))))
 [1m[31mSymTable: [0m
 a --> false
 [1m[31mOutList: [0m
 [1m[31mFileTable: [0m
+[1m[31mHeap: [0m
 
+[1m[31mProgram ID: [0m2
+[1m[31mExeStack: [0m
+(int v;(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v))))
+[1m[31mSymTable: [0m
+a --> false
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m2
 [1m[31mExeStack: [0m
 int v
 (a=true;(if ((v == 0)) then (v=2) else (v=3);print(v)))
@@ -25,7 +50,19 @@ int v
 a --> false
 [1m[31mOutList: [0m
 [1m[31mFileTable: [0m
+[1m[31mHeap: [0m
 
+[1m[31mProgram ID: [0m2
+[1m[31mExeStack: [0m
+int v
+(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v)))
+[1m[31mSymTable: [0m
+a --> false
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m2
 [1m[31mExeStack: [0m
 (a=true;(if ((v == 0)) then (v=2) else (v=3);print(v)))
 [1m[31mSymTable: [0m
@@ -33,7 +70,19 @@ a --> false
 v --> 0
 [1m[31mOutList: [0m
 [1m[31mFileTable: [0m
+[1m[31mHeap: [0m
 
+[1m[31mProgram ID: [0m2
+[1m[31mExeStack: [0m
+(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v)))
+[1m[31mSymTable: [0m
+a --> false
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m2
 [1m[31mExeStack: [0m
 a=true
 (if ((v == 0)) then (v=2) else (v=3);print(v))
@@ -42,7 +91,20 @@ a --> false
 v --> 0
 [1m[31mOutList: [0m
 [1m[31mFileTable: [0m
+[1m[31mHeap: [0m
 
+[1m[31mProgram ID: [0m2
+[1m[31mExeStack: [0m
+a=true
+(if ((v == 0)) then (v=2) else (v=3);print(v))
+[1m[31mSymTable: [0m
+a --> false
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m2
 [1m[31mExeStack: [0m
 (if ((v == 0)) then (v=2) else (v=3);print(v))
 [1m[31mSymTable: [0m
@@ -50,7 +112,19 @@ a --> true
 v --> 0
 [1m[31mOutList: [0m
 [1m[31mFileTable: [0m
+[1m[31mHeap: [0m
 
+[1m[31mProgram ID: [0m2
+[1m[31mExeStack: [0m
+(if ((v == 0)) then (v=2) else (v=3);print(v))
+[1m[31mSymTable: [0m
+a --> true
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m2
 [1m[31mExeStack: [0m
 if ((v == 0)) then (v=2) else (v=3)
 print(v)
@@ -59,7 +133,20 @@ a --> true
 v --> 0
 [1m[31mOutList: [0m
 [1m[31mFileTable: [0m
+[1m[31mHeap: [0m
 
+[1m[31mProgram ID: [0m2
+[1m[31mExeStack: [0m
+if ((v == 0)) then (v=2) else (v=3)
+print(v)
+[1m[31mSymTable: [0m
+a --> true
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m2
 [1m[31mExeStack: [0m
 v=2
 print(v)
@@ -68,7 +155,20 @@ a --> true
 v --> 0
 [1m[31mOutList: [0m
 [1m[31mFileTable: [0m
+[1m[31mHeap: [0m
 
+[1m[31mProgram ID: [0m2
+[1m[31mExeStack: [0m
+v=2
+print(v)
+[1m[31mSymTable: [0m
+a --> true
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m2
 [1m[31mExeStack: [0m
 print(v)
 [1m[31mSymTable: [0m
@@ -76,7 +176,19 @@ a --> true
 v --> 2
 [1m[31mOutList: [0m
 [1m[31mFileTable: [0m
+[1m[31mHeap: [0m
 
+[1m[31mProgram ID: [0m2
+[1m[31mExeStack: [0m
+print(v)
+[1m[31mSymTable: [0m
+a --> true
+v --> 2
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m2
 [1m[31mExeStack: [0m
 [1m[31mSymTable: [0m
 a --> true
@@ -84,4 +196,2205 @@ v --> 2
 [1m[31mOutList: [0m
 2
 [1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m2
+[1m[31mExeStack: [0m
+(bool a;(int v;(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v)))))
+[1m[31mSymTable: [0m
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m2
+[1m[31mExeStack: [0m
+bool a
+(int v;(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v))))
+[1m[31mSymTable: [0m
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m2
+[1m[31mExeStack: [0m
+bool a
+(int v;(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v))))
+[1m[31mSymTable: [0m
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m2
+[1m[31mExeStack: [0m
+(int v;(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v))))
+[1m[31mSymTable: [0m
+a --> false
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m2
+[1m[31mExeStack: [0m
+(int v;(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v))))
+[1m[31mSymTable: [0m
+a --> false
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m2
+[1m[31mExeStack: [0m
+int v
+(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v)))
+[1m[31mSymTable: [0m
+a --> false
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m2
+[1m[31mExeStack: [0m
+int v
+(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v)))
+[1m[31mSymTable: [0m
+a --> false
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m2
+[1m[31mExeStack: [0m
+(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v)))
+[1m[31mSymTable: [0m
+a --> false
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m2
+[1m[31mExeStack: [0m
+(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v)))
+[1m[31mSymTable: [0m
+a --> false
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m2
+[1m[31mExeStack: [0m
+a=true
+(if ((v == 0)) then (v=2) else (v=3);print(v))
+[1m[31mSymTable: [0m
+a --> false
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m2
+[1m[31mExeStack: [0m
+a=true
+(if ((v == 0)) then (v=2) else (v=3);print(v))
+[1m[31mSymTable: [0m
+a --> false
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m2
+[1m[31mExeStack: [0m
+(if ((v == 0)) then (v=2) else (v=3);print(v))
+[1m[31mSymTable: [0m
+a --> true
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m2
+[1m[31mExeStack: [0m
+(if ((v == 0)) then (v=2) else (v=3);print(v))
+[1m[31mSymTable: [0m
+a --> true
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m2
+[1m[31mExeStack: [0m
+if ((v == 0)) then (v=2) else (v=3)
+print(v)
+[1m[31mSymTable: [0m
+a --> true
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m2
+[1m[31mExeStack: [0m
+if ((v == 0)) then (v=2) else (v=3)
+print(v)
+[1m[31mSymTable: [0m
+a --> true
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m2
+[1m[31mExeStack: [0m
+v=2
+print(v)
+[1m[31mSymTable: [0m
+a --> true
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m2
+[1m[31mExeStack: [0m
+v=2
+print(v)
+[1m[31mSymTable: [0m
+a --> true
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m2
+[1m[31mExeStack: [0m
+print(v)
+[1m[31mSymTable: [0m
+a --> true
+v --> 2
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m2
+[1m[31mExeStack: [0m
+print(v)
+[1m[31mSymTable: [0m
+a --> true
+v --> 2
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m2
+[1m[31mExeStack: [0m
+[1m[31mSymTable: [0m
+a --> true
+v --> 2
+[1m[31mOutList: [0m
+2
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m2
+[1m[31mExeStack: [0m
+(bool a;(int v;(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v)))))
+[1m[31mSymTable: [0m
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m2
+[1m[31mExeStack: [0m
+bool a
+(int v;(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v))))
+[1m[31mSymTable: [0m
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m2
+[1m[31mExeStack: [0m
+bool a
+(int v;(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v))))
+[1m[31mSymTable: [0m
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m2
+[1m[31mExeStack: [0m
+(int v;(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v))))
+[1m[31mSymTable: [0m
+a --> false
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m2
+[1m[31mExeStack: [0m
+(int v;(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v))))
+[1m[31mSymTable: [0m
+a --> false
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m2
+[1m[31mExeStack: [0m
+int v
+(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v)))
+[1m[31mSymTable: [0m
+a --> false
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m2
+[1m[31mExeStack: [0m
+int v
+(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v)))
+[1m[31mSymTable: [0m
+a --> false
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m2
+[1m[31mExeStack: [0m
+(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v)))
+[1m[31mSymTable: [0m
+a --> false
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m2
+[1m[31mExeStack: [0m
+(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v)))
+[1m[31mSymTable: [0m
+a --> false
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m2
+[1m[31mExeStack: [0m
+a=true
+(if ((v == 0)) then (v=2) else (v=3);print(v))
+[1m[31mSymTable: [0m
+a --> false
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m2
+[1m[31mExeStack: [0m
+a=true
+(if ((v == 0)) then (v=2) else (v=3);print(v))
+[1m[31mSymTable: [0m
+a --> false
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m2
+[1m[31mExeStack: [0m
+(if ((v == 0)) then (v=2) else (v=3);print(v))
+[1m[31mSymTable: [0m
+a --> true
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m2
+[1m[31mExeStack: [0m
+(if ((v == 0)) then (v=2) else (v=3);print(v))
+[1m[31mSymTable: [0m
+a --> true
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m2
+[1m[31mExeStack: [0m
+if ((v == 0)) then (v=2) else (v=3)
+print(v)
+[1m[31mSymTable: [0m
+a --> true
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m2
+[1m[31mExeStack: [0m
+if ((v == 0)) then (v=2) else (v=3)
+print(v)
+[1m[31mSymTable: [0m
+a --> true
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m2
+[1m[31mExeStack: [0m
+v=2
+print(v)
+[1m[31mSymTable: [0m
+a --> true
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m2
+[1m[31mExeStack: [0m
+v=2
+print(v)
+[1m[31mSymTable: [0m
+a --> true
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m2
+[1m[31mExeStack: [0m
+print(v)
+[1m[31mSymTable: [0m
+a --> true
+v --> 2
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m2
+[1m[31mExeStack: [0m
+print(v)
+[1m[31mSymTable: [0m
+a --> true
+v --> 2
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m2
+[1m[31mExeStack: [0m
+[1m[31mSymTable: [0m
+a --> true
+v --> 2
+[1m[31mOutList: [0m
+2
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m2
+[1m[31mExeStack: [0m
+(bool a;(int v;(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v)))))
+[1m[31mSymTable: [0m
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m2
+[1m[31mExeStack: [0m
+bool a
+(int v;(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v))))
+[1m[31mSymTable: [0m
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m2
+[1m[31mExeStack: [0m
+bool a
+(int v;(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v))))
+[1m[31mSymTable: [0m
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m2
+[1m[31mExeStack: [0m
+(int v;(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v))))
+[1m[31mSymTable: [0m
+a --> false
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m2
+[1m[31mExeStack: [0m
+(int v;(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v))))
+[1m[31mSymTable: [0m
+a --> false
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m2
+[1m[31mExeStack: [0m
+int v
+(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v)))
+[1m[31mSymTable: [0m
+a --> false
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m2
+[1m[31mExeStack: [0m
+int v
+(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v)))
+[1m[31mSymTable: [0m
+a --> false
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m2
+[1m[31mExeStack: [0m
+(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v)))
+[1m[31mSymTable: [0m
+a --> false
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m2
+[1m[31mExeStack: [0m
+(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v)))
+[1m[31mSymTable: [0m
+a --> false
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m2
+[1m[31mExeStack: [0m
+a=true
+(if ((v == 0)) then (v=2) else (v=3);print(v))
+[1m[31mSymTable: [0m
+a --> false
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m2
+[1m[31mExeStack: [0m
+a=true
+(if ((v == 0)) then (v=2) else (v=3);print(v))
+[1m[31mSymTable: [0m
+a --> false
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m2
+[1m[31mExeStack: [0m
+(if ((v == 0)) then (v=2) else (v=3);print(v))
+[1m[31mSymTable: [0m
+a --> true
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m2
+[1m[31mExeStack: [0m
+(if ((v == 0)) then (v=2) else (v=3);print(v))
+[1m[31mSymTable: [0m
+a --> true
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m2
+[1m[31mExeStack: [0m
+if ((v == 0)) then (v=2) else (v=3)
+print(v)
+[1m[31mSymTable: [0m
+a --> true
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m2
+[1m[31mExeStack: [0m
+if ((v == 0)) then (v=2) else (v=3)
+print(v)
+[1m[31mSymTable: [0m
+a --> true
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m2
+[1m[31mExeStack: [0m
+v=2
+print(v)
+[1m[31mSymTable: [0m
+a --> true
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m2
+[1m[31mExeStack: [0m
+v=2
+print(v)
+[1m[31mSymTable: [0m
+a --> true
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m2
+[1m[31mExeStack: [0m
+print(v)
+[1m[31mSymTable: [0m
+a --> true
+v --> 2
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m2
+[1m[31mExeStack: [0m
+print(v)
+[1m[31mSymTable: [0m
+a --> true
+v --> 2
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m2
+[1m[31mExeStack: [0m
+[1m[31mSymTable: [0m
+a --> true
+v --> 2
+[1m[31mOutList: [0m
+2
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m28
+[1m[31mExeStack: [0m
+(bool a;(int v;(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v)))))
+[1m[31mSymTable: [0m
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m28
+[1m[31mExeStack: [0m
+bool a
+(int v;(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v))))
+[1m[31mSymTable: [0m
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m28
+[1m[31mExeStack: [0m
+bool a
+(int v;(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v))))
+[1m[31mSymTable: [0m
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m28
+[1m[31mExeStack: [0m
+(int v;(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v))))
+[1m[31mSymTable: [0m
+a --> false
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m28
+[1m[31mExeStack: [0m
+(int v;(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v))))
+[1m[31mSymTable: [0m
+a --> false
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m28
+[1m[31mExeStack: [0m
+int v
+(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v)))
+[1m[31mSymTable: [0m
+a --> false
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m28
+[1m[31mExeStack: [0m
+int v
+(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v)))
+[1m[31mSymTable: [0m
+a --> false
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m28
+[1m[31mExeStack: [0m
+(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v)))
+[1m[31mSymTable: [0m
+a --> false
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m28
+[1m[31mExeStack: [0m
+(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v)))
+[1m[31mSymTable: [0m
+a --> false
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m28
+[1m[31mExeStack: [0m
+a=true
+(if ((v == 0)) then (v=2) else (v=3);print(v))
+[1m[31mSymTable: [0m
+a --> false
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m28
+[1m[31mExeStack: [0m
+a=true
+(if ((v == 0)) then (v=2) else (v=3);print(v))
+[1m[31mSymTable: [0m
+a --> false
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m28
+[1m[31mExeStack: [0m
+(if ((v == 0)) then (v=2) else (v=3);print(v))
+[1m[31mSymTable: [0m
+a --> true
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m28
+[1m[31mExeStack: [0m
+(if ((v == 0)) then (v=2) else (v=3);print(v))
+[1m[31mSymTable: [0m
+a --> true
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m28
+[1m[31mExeStack: [0m
+if ((v == 0)) then (v=2) else (v=3)
+print(v)
+[1m[31mSymTable: [0m
+a --> true
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m28
+[1m[31mExeStack: [0m
+if ((v == 0)) then (v=2) else (v=3)
+print(v)
+[1m[31mSymTable: [0m
+a --> true
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m28
+[1m[31mExeStack: [0m
+v=2
+print(v)
+[1m[31mSymTable: [0m
+a --> true
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m28
+[1m[31mExeStack: [0m
+v=2
+print(v)
+[1m[31mSymTable: [0m
+a --> true
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m28
+[1m[31mExeStack: [0m
+print(v)
+[1m[31mSymTable: [0m
+a --> true
+v --> 2
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m28
+[1m[31mExeStack: [0m
+print(v)
+[1m[31mSymTable: [0m
+a --> true
+v --> 2
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m28
+[1m[31mExeStack: [0m
+[1m[31mSymTable: [0m
+a --> true
+v --> 2
+[1m[31mOutList: [0m
+2
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m29
+[1m[31mExeStack: [0m
+(bool a;(int v;(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v)))))
+[1m[31mSymTable: [0m
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m29
+[1m[31mExeStack: [0m
+bool a
+(int v;(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v))))
+[1m[31mSymTable: [0m
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m29
+[1m[31mExeStack: [0m
+bool a
+(int v;(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v))))
+[1m[31mSymTable: [0m
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m29
+[1m[31mExeStack: [0m
+(int v;(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v))))
+[1m[31mSymTable: [0m
+a --> false
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m29
+[1m[31mExeStack: [0m
+(int v;(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v))))
+[1m[31mSymTable: [0m
+a --> false
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m29
+[1m[31mExeStack: [0m
+int v
+(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v)))
+[1m[31mSymTable: [0m
+a --> false
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m29
+[1m[31mExeStack: [0m
+int v
+(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v)))
+[1m[31mSymTable: [0m
+a --> false
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m29
+[1m[31mExeStack: [0m
+(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v)))
+[1m[31mSymTable: [0m
+a --> false
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m29
+[1m[31mExeStack: [0m
+(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v)))
+[1m[31mSymTable: [0m
+a --> false
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m29
+[1m[31mExeStack: [0m
+a=true
+(if ((v == 0)) then (v=2) else (v=3);print(v))
+[1m[31mSymTable: [0m
+a --> false
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m29
+[1m[31mExeStack: [0m
+a=true
+(if ((v == 0)) then (v=2) else (v=3);print(v))
+[1m[31mSymTable: [0m
+a --> false
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m29
+[1m[31mExeStack: [0m
+(if ((v == 0)) then (v=2) else (v=3);print(v))
+[1m[31mSymTable: [0m
+a --> true
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m29
+[1m[31mExeStack: [0m
+(if ((v == 0)) then (v=2) else (v=3);print(v))
+[1m[31mSymTable: [0m
+a --> true
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m29
+[1m[31mExeStack: [0m
+if ((v == 0)) then (v=2) else (v=3)
+print(v)
+[1m[31mSymTable: [0m
+a --> true
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m29
+[1m[31mExeStack: [0m
+if ((v == 0)) then (v=2) else (v=3)
+print(v)
+[1m[31mSymTable: [0m
+a --> true
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m29
+[1m[31mExeStack: [0m
+v=2
+print(v)
+[1m[31mSymTable: [0m
+a --> true
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m29
+[1m[31mExeStack: [0m
+v=2
+print(v)
+[1m[31mSymTable: [0m
+a --> true
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m29
+[1m[31mExeStack: [0m
+print(v)
+[1m[31mSymTable: [0m
+a --> true
+v --> 2
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m29
+[1m[31mExeStack: [0m
+print(v)
+[1m[31mSymTable: [0m
+a --> true
+v --> 2
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m29
+[1m[31mExeStack: [0m
+[1m[31mSymTable: [0m
+a --> true
+v --> 2
+[1m[31mOutList: [0m
+2
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m30
+[1m[31mExeStack: [0m
+(bool a;(int v;(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v)))))
+[1m[31mSymTable: [0m
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m30
+[1m[31mExeStack: [0m
+bool a
+(int v;(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v))))
+[1m[31mSymTable: [0m
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m30
+[1m[31mExeStack: [0m
+bool a
+(int v;(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v))))
+[1m[31mSymTable: [0m
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m30
+[1m[31mExeStack: [0m
+(int v;(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v))))
+[1m[31mSymTable: [0m
+a --> false
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m30
+[1m[31mExeStack: [0m
+(int v;(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v))))
+[1m[31mSymTable: [0m
+a --> false
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m30
+[1m[31mExeStack: [0m
+int v
+(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v)))
+[1m[31mSymTable: [0m
+a --> false
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m30
+[1m[31mExeStack: [0m
+int v
+(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v)))
+[1m[31mSymTable: [0m
+a --> false
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m30
+[1m[31mExeStack: [0m
+(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v)))
+[1m[31mSymTable: [0m
+a --> false
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m30
+[1m[31mExeStack: [0m
+(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v)))
+[1m[31mSymTable: [0m
+a --> false
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m30
+[1m[31mExeStack: [0m
+a=true
+(if ((v == 0)) then (v=2) else (v=3);print(v))
+[1m[31mSymTable: [0m
+a --> false
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m30
+[1m[31mExeStack: [0m
+a=true
+(if ((v == 0)) then (v=2) else (v=3);print(v))
+[1m[31mSymTable: [0m
+a --> false
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m30
+[1m[31mExeStack: [0m
+(if ((v == 0)) then (v=2) else (v=3);print(v))
+[1m[31mSymTable: [0m
+a --> true
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m30
+[1m[31mExeStack: [0m
+(if ((v == 0)) then (v=2) else (v=3);print(v))
+[1m[31mSymTable: [0m
+a --> true
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m30
+[1m[31mExeStack: [0m
+if ((v == 0)) then (v=2) else (v=3)
+print(v)
+[1m[31mSymTable: [0m
+a --> true
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m30
+[1m[31mExeStack: [0m
+if ((v == 0)) then (v=2) else (v=3)
+print(v)
+[1m[31mSymTable: [0m
+a --> true
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m30
+[1m[31mExeStack: [0m
+v=2
+print(v)
+[1m[31mSymTable: [0m
+a --> true
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m30
+[1m[31mExeStack: [0m
+v=2
+print(v)
+[1m[31mSymTable: [0m
+a --> true
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m30
+[1m[31mExeStack: [0m
+print(v)
+[1m[31mSymTable: [0m
+a --> true
+v --> 2
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m30
+[1m[31mExeStack: [0m
+print(v)
+[1m[31mSymTable: [0m
+a --> true
+v --> 2
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m30
+[1m[31mExeStack: [0m
+[1m[31mSymTable: [0m
+a --> true
+v --> 2
+[1m[31mOutList: [0m
+2
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m31
+[1m[31mExeStack: [0m
+(bool a;(int v;(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v)))))
+[1m[31mSymTable: [0m
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m31
+[1m[31mExeStack: [0m
+bool a
+(int v;(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v))))
+[1m[31mSymTable: [0m
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m31
+[1m[31mExeStack: [0m
+bool a
+(int v;(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v))))
+[1m[31mSymTable: [0m
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m31
+[1m[31mExeStack: [0m
+(int v;(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v))))
+[1m[31mSymTable: [0m
+a --> false
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m31
+[1m[31mExeStack: [0m
+(int v;(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v))))
+[1m[31mSymTable: [0m
+a --> false
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m31
+[1m[31mExeStack: [0m
+int v
+(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v)))
+[1m[31mSymTable: [0m
+a --> false
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m31
+[1m[31mExeStack: [0m
+int v
+(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v)))
+[1m[31mSymTable: [0m
+a --> false
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m31
+[1m[31mExeStack: [0m
+(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v)))
+[1m[31mSymTable: [0m
+a --> false
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m31
+[1m[31mExeStack: [0m
+(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v)))
+[1m[31mSymTable: [0m
+a --> false
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m31
+[1m[31mExeStack: [0m
+a=true
+(if ((v == 0)) then (v=2) else (v=3);print(v))
+[1m[31mSymTable: [0m
+a --> false
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m31
+[1m[31mExeStack: [0m
+a=true
+(if ((v == 0)) then (v=2) else (v=3);print(v))
+[1m[31mSymTable: [0m
+a --> false
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m31
+[1m[31mExeStack: [0m
+(if ((v == 0)) then (v=2) else (v=3);print(v))
+[1m[31mSymTable: [0m
+a --> true
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m31
+[1m[31mExeStack: [0m
+(if ((v == 0)) then (v=2) else (v=3);print(v))
+[1m[31mSymTable: [0m
+a --> true
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m31
+[1m[31mExeStack: [0m
+if ((v == 0)) then (v=2) else (v=3)
+print(v)
+[1m[31mSymTable: [0m
+a --> true
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m31
+[1m[31mExeStack: [0m
+if ((v == 0)) then (v=2) else (v=3)
+print(v)
+[1m[31mSymTable: [0m
+a --> true
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m31
+[1m[31mExeStack: [0m
+v=2
+print(v)
+[1m[31mSymTable: [0m
+a --> true
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m31
+[1m[31mExeStack: [0m
+v=2
+print(v)
+[1m[31mSymTable: [0m
+a --> true
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m31
+[1m[31mExeStack: [0m
+print(v)
+[1m[31mSymTable: [0m
+a --> true
+v --> 2
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m31
+[1m[31mExeStack: [0m
+print(v)
+[1m[31mSymTable: [0m
+a --> true
+v --> 2
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m31
+[1m[31mExeStack: [0m
+[1m[31mSymTable: [0m
+a --> true
+v --> 2
+[1m[31mOutList: [0m
+2
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m32
+[1m[31mExeStack: [0m
+(bool a;(int v;(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v)))))
+[1m[31mSymTable: [0m
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m32
+[1m[31mExeStack: [0m
+bool a
+(int v;(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v))))
+[1m[31mSymTable: [0m
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m32
+[1m[31mExeStack: [0m
+bool a
+(int v;(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v))))
+[1m[31mSymTable: [0m
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m32
+[1m[31mExeStack: [0m
+(int v;(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v))))
+[1m[31mSymTable: [0m
+a --> false
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m32
+[1m[31mExeStack: [0m
+(int v;(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v))))
+[1m[31mSymTable: [0m
+a --> false
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m32
+[1m[31mExeStack: [0m
+int v
+(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v)))
+[1m[31mSymTable: [0m
+a --> false
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m32
+[1m[31mExeStack: [0m
+int v
+(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v)))
+[1m[31mSymTable: [0m
+a --> false
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m32
+[1m[31mExeStack: [0m
+(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v)))
+[1m[31mSymTable: [0m
+a --> false
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m32
+[1m[31mExeStack: [0m
+(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v)))
+[1m[31mSymTable: [0m
+a --> false
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m32
+[1m[31mExeStack: [0m
+a=true
+(if ((v == 0)) then (v=2) else (v=3);print(v))
+[1m[31mSymTable: [0m
+a --> false
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m32
+[1m[31mExeStack: [0m
+a=true
+(if ((v == 0)) then (v=2) else (v=3);print(v))
+[1m[31mSymTable: [0m
+a --> false
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m32
+[1m[31mExeStack: [0m
+(if ((v == 0)) then (v=2) else (v=3);print(v))
+[1m[31mSymTable: [0m
+a --> true
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m32
+[1m[31mExeStack: [0m
+(if ((v == 0)) then (v=2) else (v=3);print(v))
+[1m[31mSymTable: [0m
+a --> true
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m32
+[1m[31mExeStack: [0m
+if ((v == 0)) then (v=2) else (v=3)
+print(v)
+[1m[31mSymTable: [0m
+a --> true
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m32
+[1m[31mExeStack: [0m
+if ((v == 0)) then (v=2) else (v=3)
+print(v)
+[1m[31mSymTable: [0m
+a --> true
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m32
+[1m[31mExeStack: [0m
+v=2
+print(v)
+[1m[31mSymTable: [0m
+a --> true
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m32
+[1m[31mExeStack: [0m
+v=2
+print(v)
+[1m[31mSymTable: [0m
+a --> true
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m32
+[1m[31mExeStack: [0m
+print(v)
+[1m[31mSymTable: [0m
+a --> true
+v --> 2
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m32
+[1m[31mExeStack: [0m
+print(v)
+[1m[31mSymTable: [0m
+a --> true
+v --> 2
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m32
+[1m[31mExeStack: [0m
+[1m[31mSymTable: [0m
+a --> true
+v --> 2
+[1m[31mOutList: [0m
+2
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m33
+[1m[31mExeStack: [0m
+(bool a;(int v;(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v)))))
+[1m[31mSymTable: [0m
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m33
+[1m[31mExeStack: [0m
+bool a
+(int v;(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v))))
+[1m[31mSymTable: [0m
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m33
+[1m[31mExeStack: [0m
+bool a
+(int v;(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v))))
+[1m[31mSymTable: [0m
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m33
+[1m[31mExeStack: [0m
+(int v;(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v))))
+[1m[31mSymTable: [0m
+a --> false
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m33
+[1m[31mExeStack: [0m
+(int v;(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v))))
+[1m[31mSymTable: [0m
+a --> false
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m33
+[1m[31mExeStack: [0m
+int v
+(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v)))
+[1m[31mSymTable: [0m
+a --> false
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m33
+[1m[31mExeStack: [0m
+int v
+(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v)))
+[1m[31mSymTable: [0m
+a --> false
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m33
+[1m[31mExeStack: [0m
+(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v)))
+[1m[31mSymTable: [0m
+a --> false
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m33
+[1m[31mExeStack: [0m
+(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v)))
+[1m[31mSymTable: [0m
+a --> false
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m33
+[1m[31mExeStack: [0m
+a=true
+(if ((v == 0)) then (v=2) else (v=3);print(v))
+[1m[31mSymTable: [0m
+a --> false
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m33
+[1m[31mExeStack: [0m
+a=true
+(if ((v == 0)) then (v=2) else (v=3);print(v))
+[1m[31mSymTable: [0m
+a --> false
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m33
+[1m[31mExeStack: [0m
+(if ((v == 0)) then (v=2) else (v=3);print(v))
+[1m[31mSymTable: [0m
+a --> true
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m33
+[1m[31mExeStack: [0m
+(if ((v == 0)) then (v=2) else (v=3);print(v))
+[1m[31mSymTable: [0m
+a --> true
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m33
+[1m[31mExeStack: [0m
+if ((v == 0)) then (v=2) else (v=3)
+print(v)
+[1m[31mSymTable: [0m
+a --> true
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m33
+[1m[31mExeStack: [0m
+if ((v == 0)) then (v=2) else (v=3)
+print(v)
+[1m[31mSymTable: [0m
+a --> true
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m33
+[1m[31mExeStack: [0m
+v=2
+print(v)
+[1m[31mSymTable: [0m
+a --> true
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m33
+[1m[31mExeStack: [0m
+v=2
+print(v)
+[1m[31mSymTable: [0m
+a --> true
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m33
+[1m[31mExeStack: [0m
+print(v)
+[1m[31mSymTable: [0m
+a --> true
+v --> 2
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m33
+[1m[31mExeStack: [0m
+print(v)
+[1m[31mSymTable: [0m
+a --> true
+v --> 2
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m33
+[1m[31mExeStack: [0m
+[1m[31mSymTable: [0m
+a --> true
+v --> 2
+[1m[31mOutList: [0m
+2
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m37
+[1m[31mExeStack: [0m
+(bool a;(int v;(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v)))))
+[1m[31mSymTable: [0m
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m37
+[1m[31mExeStack: [0m
+bool a
+(int v;(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v))))
+[1m[31mSymTable: [0m
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m37
+[1m[31mExeStack: [0m
+bool a
+(int v;(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v))))
+[1m[31mSymTable: [0m
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m37
+[1m[31mExeStack: [0m
+(int v;(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v))))
+[1m[31mSymTable: [0m
+a --> false
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m37
+[1m[31mExeStack: [0m
+(int v;(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v))))
+[1m[31mSymTable: [0m
+a --> false
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m37
+[1m[31mExeStack: [0m
+int v
+(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v)))
+[1m[31mSymTable: [0m
+a --> false
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m37
+[1m[31mExeStack: [0m
+int v
+(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v)))
+[1m[31mSymTable: [0m
+a --> false
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m37
+[1m[31mExeStack: [0m
+(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v)))
+[1m[31mSymTable: [0m
+a --> false
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m37
+[1m[31mExeStack: [0m
+(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v)))
+[1m[31mSymTable: [0m
+a --> false
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m37
+[1m[31mExeStack: [0m
+a=true
+(if ((v == 0)) then (v=2) else (v=3);print(v))
+[1m[31mSymTable: [0m
+a --> false
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m37
+[1m[31mExeStack: [0m
+a=true
+(if ((v == 0)) then (v=2) else (v=3);print(v))
+[1m[31mSymTable: [0m
+a --> false
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m37
+[1m[31mExeStack: [0m
+(if ((v == 0)) then (v=2) else (v=3);print(v))
+[1m[31mSymTable: [0m
+a --> true
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m37
+[1m[31mExeStack: [0m
+(if ((v == 0)) then (v=2) else (v=3);print(v))
+[1m[31mSymTable: [0m
+a --> true
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m37
+[1m[31mExeStack: [0m
+if ((v == 0)) then (v=2) else (v=3)
+print(v)
+[1m[31mSymTable: [0m
+a --> true
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m37
+[1m[31mExeStack: [0m
+if ((v == 0)) then (v=2) else (v=3)
+print(v)
+[1m[31mSymTable: [0m
+a --> true
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m37
+[1m[31mExeStack: [0m
+v=2
+print(v)
+[1m[31mSymTable: [0m
+a --> true
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m37
+[1m[31mExeStack: [0m
+v=2
+print(v)
+[1m[31mSymTable: [0m
+a --> true
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m37
+[1m[31mExeStack: [0m
+print(v)
+[1m[31mSymTable: [0m
+a --> true
+v --> 2
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m37
+[1m[31mExeStack: [0m
+print(v)
+[1m[31mSymTable: [0m
+a --> true
+v --> 2
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m37
+[1m[31mExeStack: [0m
+[1m[31mSymTable: [0m
+a --> true
+v --> 2
+[1m[31mOutList: [0m
+2
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m38
+[1m[31mExeStack: [0m
+(bool a;(int v;(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v)))))
+[1m[31mSymTable: [0m
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m38
+[1m[31mExeStack: [0m
+bool a
+(int v;(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v))))
+[1m[31mSymTable: [0m
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m38
+[1m[31mExeStack: [0m
+bool a
+(int v;(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v))))
+[1m[31mSymTable: [0m
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m38
+[1m[31mExeStack: [0m
+(int v;(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v))))
+[1m[31mSymTable: [0m
+a --> false
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m38
+[1m[31mExeStack: [0m
+(int v;(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v))))
+[1m[31mSymTable: [0m
+a --> false
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m38
+[1m[31mExeStack: [0m
+int v
+(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v)))
+[1m[31mSymTable: [0m
+a --> false
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m38
+[1m[31mExeStack: [0m
+int v
+(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v)))
+[1m[31mSymTable: [0m
+a --> false
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m38
+[1m[31mExeStack: [0m
+(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v)))
+[1m[31mSymTable: [0m
+a --> false
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m38
+[1m[31mExeStack: [0m
+(a=true;(if ((v == 0)) then (v=2) else (v=3);print(v)))
+[1m[31mSymTable: [0m
+a --> false
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m38
+[1m[31mExeStack: [0m
+a=true
+(if ((v == 0)) then (v=2) else (v=3);print(v))
+[1m[31mSymTable: [0m
+a --> false
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m38
+[1m[31mExeStack: [0m
+a=true
+(if ((v == 0)) then (v=2) else (v=3);print(v))
+[1m[31mSymTable: [0m
+a --> false
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m38
+[1m[31mExeStack: [0m
+(if ((v == 0)) then (v=2) else (v=3);print(v))
+[1m[31mSymTable: [0m
+a --> true
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m38
+[1m[31mExeStack: [0m
+(if ((v == 0)) then (v=2) else (v=3);print(v))
+[1m[31mSymTable: [0m
+a --> true
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m38
+[1m[31mExeStack: [0m
+if ((v == 0)) then (v=2) else (v=3)
+print(v)
+[1m[31mSymTable: [0m
+a --> true
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m38
+[1m[31mExeStack: [0m
+if ((v == 0)) then (v=2) else (v=3)
+print(v)
+[1m[31mSymTable: [0m
+a --> true
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m38
+[1m[31mExeStack: [0m
+v=2
+print(v)
+[1m[31mSymTable: [0m
+a --> true
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m38
+[1m[31mExeStack: [0m
+v=2
+print(v)
+[1m[31mSymTable: [0m
+a --> true
+v --> 0
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m38
+[1m[31mExeStack: [0m
+print(v)
+[1m[31mSymTable: [0m
+a --> true
+v --> 2
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m38
+[1m[31mExeStack: [0m
+print(v)
+[1m[31mSymTable: [0m
+a --> true
+v --> 2
+[1m[31mOutList: [0m
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
+
+[1m[31mProgram ID: [0m38
+[1m[31mExeStack: [0m
+[1m[31mSymTable: [0m
+a --> true
+v --> 2
+[1m[31mOutList: [0m
+2
+[1m[31mFileTable: [0m
+[1m[31mHeap: [0m
 

@@ -31,14 +31,14 @@ public class whileStatement implements IStmt {
 
         BoolValue bool_exp_val = (BoolValue) exp_val;
         if (!bool_exp_val.getVal()) {
-            return state; // we don't push anything on the stack and return
+            return null; // we don't push anything on the stack and return
         }
 
         // otherwise we push the while statement again on the stack and then the statement
         stk.push(deepCopy());
         stk.push(stmt);
 
-        return state;
+        return null;
     }
 
     @Override
