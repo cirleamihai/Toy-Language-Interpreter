@@ -1,5 +1,6 @@
 package View;
 
+import Exceptions.MyException;
 import Model.ADT.*;
 import Model.Expression.*;
 import Model.Statements.*;
@@ -16,7 +17,7 @@ import java.util.List;
 
 class Interpreter {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws MyException {
         TextMenu menu = new TextMenu();
 
 //        int a; int b; a=2+3*5; b=a+1; Print(b) is represented as:
@@ -31,6 +32,7 @@ class Interpreter {
         MyList<Value> list1 = new MyList<>();
         FileTable<StringValue, BufferedReader> fileTable1 = new FileTable<>();
         Heap heap1 = new Heap();
+        ex1.typecheck(new MyDictionary<>());
         PrgState prg1 = new PrgState(stack1, dict1, list1, fileTable1, heap1, ex1);
         List<PrgState> program1 = new ArrayList<>();
         program1.add(prg1);
@@ -56,6 +58,7 @@ class Interpreter {
         MyList<Value> list2 = new MyList<>();
         FileTable<StringValue, BufferedReader> fileTable2 = new FileTable<>();
         Heap heap2 = new Heap();
+        ex2.typecheck(new MyDictionary<>());
         PrgState prg2 = new PrgState(stack2, dict2, list2, fileTable2, heap2, ex2);
         List<PrgState> program2 = new ArrayList<>();
         program2.add(prg2);
@@ -85,6 +88,7 @@ class Interpreter {
         MyList<Value> list3 = new MyList<>();
         FileTable<StringValue, BufferedReader> fileTable3 = new FileTable<>();
         Heap heap3 = new Heap();
+        ex3.typecheck(new MyDictionary<>());
         PrgState prg3 = new PrgState(stack3, dict3, list3, fileTable3, heap3, ex3);
         List<PrgState> program3 = new ArrayList<>();
         program3.add(prg3);
@@ -113,6 +117,7 @@ class Interpreter {
         MyList<Value> list4 = new MyList<>();
         FileTable<StringValue, BufferedReader> fileTable4 = new FileTable<>();
         Heap heap4 = new Heap();
+        ex4.typecheck(new MyDictionary<>());
         PrgState prg4 = new PrgState(stack4, dict4, list4, fileTable4, heap4, ex4);
         List<PrgState> program4 = new ArrayList<>();
         program4.add(prg4);
@@ -146,6 +151,7 @@ class Interpreter {
         MyList<Value> list5 = new MyList<>();
         FileTable<StringValue, BufferedReader> fileTable5 = new FileTable<>();
         Heap heap5 = new Heap();
+        ex5.typecheck(new MyDictionary<>());
         PrgState prg5 = new PrgState(stack5, dict5, list5, fileTable5, heap5, ex5);
         List<PrgState> program5 = new ArrayList<>();
         program5.add(prg5);

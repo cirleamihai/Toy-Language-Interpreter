@@ -6,6 +6,7 @@ import Model.ADT.MyIList;
 import Exceptions.MyException;
 import Model.Expression.Exp;
 import Model.PrgState;
+import Model.Type.Type;
 import Model.Value.Value;
 
 public class PrintStmt implements IStmt {
@@ -28,6 +29,11 @@ public class PrintStmt implements IStmt {
         outList.append(val);
 
         return null;
+    }
+
+    public MyIDictionary<String, Type> typecheck(MyIDictionary<String, Type> typeEnv) throws MyException {
+        exp.typecheck(typeEnv);
+        return typeEnv;
     }
 
     public IStmt deepCopy() {

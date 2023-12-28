@@ -5,6 +5,7 @@ import Model.ADT.MyIDictionary;
 import Model.ADT.MyIHeap;
 import Model.Expression.Exp;
 import Model.PrgState;
+import Model.Type.Type;
 import Model.Value.RefValue;
 import Model.Type.RefType;
 import Model.Value.Value;
@@ -40,6 +41,17 @@ public class NewStmt implements IStmt{
 
             return null;
         } else throw new MyException("The types are not equal");
+    }
+
+    @Override
+    public MyIDictionary<String, Type> typecheck(MyIDictionary<String, Type> typeEnv) throws MyException {
+        Type typeVar = typeEnv.get(varName);
+        Type typeExp = exp.typecheck(typeEnv);
+
+        if (!typeVar.equals(new RefType(typeExp)))
+            throw new MyException("NEW stmt: right hand side and left hand side have different types!");
+
+        return typeEnv;
     }
 
     @Override

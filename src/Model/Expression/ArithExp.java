@@ -4,6 +4,7 @@ import Model.ADT.MyIDictionary;
 import Exceptions.MyException;
 import Model.ADT.MyIHeap;
 import Model.Type.IntType;
+import Model.Type.Type;
 import Model.Value.IntValue;
 import Model.Value.Value;
 
@@ -53,6 +54,20 @@ public class ArithExp implements Exp {
         } else {
             throw new MyException("first variable is not an integer");
         }
+    }
+
+    public Type typecheck(MyIDictionary<String, Type> typeEnv) throws MyException {
+        Type typ1, typ2;
+        typ1 = e1.typecheck(typeEnv);
+        typ2 = e2.typecheck(typeEnv);
+
+        if (!typ1.equals(new IntType()))
+            System.out.println("First operand is not an integer");
+
+        if (!typ2.equals(new IntType()))
+            System.out.println("Second operand is not an integer");
+
+        return new IntType();
     }
 
     public Exp deepCopy() {

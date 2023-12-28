@@ -5,6 +5,8 @@ import Model.ADT.MyIDictionary;
 import Model.ADT.MyIHeap;
 import Model.Expression.Exp;
 import Model.PrgState;
+import Model.Type.RefType;
+import Model.Type.Type;
 import Model.Value.RefValue;
 import Model.Value.Value;
 
@@ -45,6 +47,17 @@ public class wH implements IStmt { // Heap Writing
         heap.update(address, exp_value);
 
         return null;
+    }
+
+    @Override
+    public MyIDictionary<String, Type> typecheck(MyIDictionary<String, Type> typeEnv) throws MyException {
+        Type typeVar = typeEnv.get(varName);
+        Type typeExp = exp.typecheck(typeEnv);
+
+        if (!typeVar.equals(new RefType(typeExp)))
+            throw new MyException("Writing on Heap stmt: right hand side and left hand side have different types!");
+
+        return typeEnv;
     }
 
     @Override

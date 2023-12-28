@@ -7,6 +7,7 @@ import Model.ADT.MyIStack;
 import Model.Expression.Exp;
 import Model.PrgState;
 import Model.Type.BoolType;
+import Model.Type.Type;
 import Model.Value.BoolValue;
 import Model.Value.Value;
 
@@ -39,6 +40,18 @@ public class whileStatement implements IStmt {
         stk.push(stmt);
 
         return null;
+    }
+
+    @Override
+    public MyIDictionary<String, Type> typecheck(MyIDictionary<String, Type> typeEnv) throws MyException {
+        Type typExp = exp.typecheck(typeEnv);
+        if (!typExp.equals(new BoolType())) {
+            throw new MyException("The condition of WHILE is not a bool type!");
+        }
+
+        stmt.typecheck(typeEnv.deepCopy());
+
+        return typeEnv;
     }
 
     @Override

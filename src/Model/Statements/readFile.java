@@ -7,6 +7,7 @@ import Model.Expression.Exp;
 import Model.PrgState;
 import Model.Type.IntType;
 import Model.Type.StringType;
+import Model.Type.Type;
 import Model.Value.IntValue;
 import Model.Value.StringValue;
 import Model.Value.Value;
@@ -64,5 +65,18 @@ public class readFile implements IStmt {
                 } else throw new MyException("Expression " + exp.toString() + " is not a string");
             } else throw new MyException("Variable Type is not Integer");
         } else throw new MyException("This variable is not declared");
+    }
+
+    public MyIDictionary<String, Type> typecheck(MyIDictionary<String, Type> typeEnv) throws MyException {
+        Type typExp = exp.typecheck(typeEnv);
+        Type typVar = typeEnv.get(varName);
+
+        if (!typVar.equals(new IntType()))
+            throw new MyException("Read file: Variable Type is not Integer!");
+
+        if (!typExp.equals(new StringType()))
+            throw new MyException("Read file: Expression Type is not String!");
+
+        return typeEnv;
     }
 }

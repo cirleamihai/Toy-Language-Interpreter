@@ -6,6 +6,7 @@ import Model.ADT.MyIStack;
 import Exceptions.MyException;
 import Model.PrgState;
 import Model.Type.BoolType;
+import Model.Type.Type;
 import Model.Value.BoolValue;
 import Model.Expression.Exp;
 import Model.Value.Value;
@@ -43,6 +44,19 @@ public class IfStmt implements IStmt {
         }
 
         return null;
+    }
+
+    @Override
+    public MyIDictionary<String, Type> typecheck(MyIDictionary<String, Type> typeEnv) throws MyException {
+        Type typExp = exp.typecheck(typeEnv);
+        if (!typExp.equals(new BoolType())) {
+            throw new MyException("The condition of IF has not the type bool");
+        }
+
+        thenS.typecheck(typeEnv.deepCopy());
+        elseS.typecheck(typeEnv.deepCopy());
+
+        return typeEnv;
     }
 
     public IStmt deepCopy() {

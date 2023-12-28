@@ -5,6 +5,7 @@ import Model.ADT.MyIHeap;
 import Model.Expression.Exp;
 import Model.PrgState;
 import Model.Type.StringType;
+import Model.Type.Type;
 import Model.Value.StringValue;
 import Model.Value.Value;
 import Model.ADT.MyIDictionary;
@@ -51,6 +52,14 @@ public class openRFile implements IStmt {
                 }
             } else throw new MyException("The file is already opened");
         } else throw new MyException("The expression is not a string");
+    }
 
+    public MyIDictionary<String, Type> typecheck(MyIDictionary<String, Type> typeEnv) throws MyException {
+        Type typExp = exp.typecheck(typeEnv);
+        if (!typExp.equals(new StringType())) {
+            throw new MyException("The expression is not a string");
+        }
+
+        return typeEnv;
     }
 }
