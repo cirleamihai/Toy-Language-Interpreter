@@ -24,6 +24,10 @@ public class Controller {
         this.repo = repo;
     }
 
+    public IRepo getRepo(){
+        return repo;
+    }
+
     public void allSteps() {
         executor = Executors.newFixedThreadPool(2);
 
