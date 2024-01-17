@@ -11,4 +11,5 @@ public interface IRepo {
     void setPrgList(List<PrgState> list);
     void loadOgPrgList();
     void setOgPrgList();
+    PrgState getPrgById(String strId);
 }

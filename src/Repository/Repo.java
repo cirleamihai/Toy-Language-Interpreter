@@ -8,6 +8,7 @@ import java.io.FileWriter;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class Repo implements IRepo {
     List<PrgState> prgList;
@@ -52,5 +53,14 @@ public class Repo implements IRepo {
 
     public void setPrgList(List<PrgState> list) {
         prgList = list;
+    }
+
+    public PrgState getPrgById(String stringId) {
+        for (PrgState prg : prgList) {
+            if (Objects.equals(prg.getStrID(), stringId)) {
+                return prg;
+            }
+        }
+        return null;
     }
 }

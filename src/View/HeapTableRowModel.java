@@ -4,35 +4,36 @@ import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
 
 public class HeapTableRowModel {
-    private final SimpleIntegerProperty column1 = new SimpleIntegerProperty();
-    private final SimpleStringProperty column2 = new SimpleStringProperty("");
+    private final SimpleIntegerProperty addresses = new SimpleIntegerProperty();
+    private final SimpleStringProperty values = new SimpleStringProperty("");
 
-    public HeapTableRowModel(Integer col1, String col2) {
-        this.column1.set(col1);
-        this.column2.set(col2);
+    public HeapTableRowModel(Integer addresses, String values) {
+        this.addresses.set(addresses);
+        this.values.set(values);
     }
 
-    public Integer getColumn1() {
-        return column1.get();
+    public int getAddresses() {
+        return addresses.get();
     }
 
-    public SimpleIntegerProperty column1Property() {
-        return column1;
+    public SimpleIntegerProperty addressesProperty() {
+        return addresses;
     }
 
-    public void setColumn1(Integer column1) {
-        this.column1.set(column1);
+    public void setAddresses(Integer addresses) {
+        this.addresses.set(addresses);
     }
 
-    public String getColumn2() {
-        return column2.get();
+    public String getValues() {
+        return values.get();
     }
 
-    public SimpleStringProperty column2Property() {
-        return column2;
+    public SimpleStringProperty valuesProperty() {
+        return values;
     }
 
-    public void setColumn2(String column2) {
-        this.column2.set(column2);
+    public void setValues(String values) {
+        this.values.set(values);
     }
 }
+

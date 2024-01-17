@@ -54,7 +54,7 @@ public class Controller {
             prgList.forEach(prg -> prg.getHeap().setContent(newHeap));
 
             // one step for all programs
-            oneStepForAllPrg(prgList);
+            oneStepForAllPrg(prgList, executor);
             prgList = removeCompletedPrg(repo.getPrgList());
         }
 
@@ -70,7 +70,76 @@ public class Controller {
        out.getContent().forEach(elem -> System.out.println(elem.toString()));
     }
 
-    void oneStepForAllPrg(List<PrgState> prgList) {
+    public void oneStepGUI(ExecutorService executor, IRepo repo) throws RuntimeException, ProgramEndedExc {
+        List<PrgState> prgList = removeCompletedPrg(repo.getPrgList());
+
+        if (prgList.isEmpty()) {
+            throw new ProgramEndedExc("Program is done!");
+        }
+
+        // garbage collector
+        List<Integer> symTableAddr = getAddrFromSymTable(prgList.get(0).getSymTable().getContent().values());
+        List<Integer> heapAddr = getAddrFromSymTable(prgList.get(0).getHeap().getContent().values());
+        symTableAddr.addAll(heapAddr);
+
+        prgList.forEach(prg -> {
+            List<Integer> localSymTableAddr = getAddrFromSymTable(prg.getSymTable().getContent().values());
+            symTableAddr.addAll(localSymTableAddr);
+        });
+
+        // Making sure that we keep one reference to only one heap
+        Map<Integer, Value> newHeap = garbageCollector(symTableAddr, prgList.get(0).getHeap().getContent());
+        prgList.forEach(prg -> prg.getHeap().setContent(newHeap));
+
+        // one step for all programs
+        oneStepForAllPrgGUI(prgList, executor, repo);
+        prgList = removeCompletedPrg(repo.getPrgList());
+    }
+
+    void oneStepForAllPrgGUI(List<PrgState> prgList, ExecutorService executor, IRepo repo) throws RuntimeException {
+        prgList.forEach(prg -> {
+            try {
+                repo.logPrgStateExec(prg);
+            } catch (MyException e) {
+                throw new RuntimeException(e);
+            }
+        });
+
+        //Transforming each PrgState from prgList into a Callable object that,
+        // when called, will execute the oneStep method on that PrgState.
+        List<Callable<PrgState>> callList = prgList.stream()
+                .map((PrgState p) -> (Callable<PrgState>) (p::oneStep))
+                .collect(Collectors.toList());
+
+        try {
+            List<PrgState> newPrgList = executor.invokeAll(callList).stream()
+                    .map(future -> {
+                        try {
+                            return future.get();
+                        } catch (Exception e) {
+                            throw new RuntimeException(e);
+                        }
+                    }).filter(p -> p != null).collect(Collectors.toList());
+
+            // Add the newly created programs to the list of existing programs
+            prgList.addAll(newPrgList);
+        } catch (InterruptedException | RuntimeException e) {
+            throw new RuntimeException(e);
+        }
+
+
+        prgList.forEach(prg -> {
+            try {
+                repo.logPrgStateExec(prg);
+            } catch (MyException e) {
+                throw new RuntimeException(e);
+            }
+        });
+
+        repo.setPrgList(prgList);
+    }
+
+    void oneStepForAllPrg(List<PrgState> prgList, ExecutorService executor) {
         prgList.forEach(prg -> {
             try {
                 repo.logPrgStateExec(prg);

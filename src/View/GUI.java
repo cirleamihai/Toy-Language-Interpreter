@@ -2,8 +2,10 @@ package View;
 
 import Controller.Controller;
 import Exceptions.MyException;
+import Exceptions.ProgramEndedExc;
 import Model.ADT.Heap;
 import Model.ADT.MyIHeap;
+import Model.PrgState;
 import Model.Statements.IStmt;
 import Model.Value.Value;
 import Repository.IRepo;
@@ -13,10 +15,7 @@ import javafx.collections.ObservableList;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
@@ -24,10 +23,22 @@ import javafx.stage.Stage;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Stack;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
 
 public class GUI extends Application {
+
+    TextField prgStatesNr;
+    TableView<HeapTableRowModel> heapTable;
+    ListView<String> outListView;
+    ListView<String> fileTableListView;
+    ListView<String> programsView;
+    TableView<SymTableRowModel> symTable;
+    ListView<String> exeStackView;
+    PrgState currentPrgState;
 
     @Override
     public void start(Stage primaryStage) throws MyException {
@@ -56,6 +67,12 @@ public class GUI extends Application {
 
         // Create a Scene with the layout
         Scene scene = new Scene(root, 300, 250);
+        scene.setOnMouseClicked(event -> {
+            // Check if the click target is not part of the ListView
+            if (!(event.getTarget() instanceof ListView)) {
+                programsView.getSelectionModel().clearSelection();
+            }
+        });
 
         // Set the scene to the stage and show the stage
         primaryStage.setTitle("JavaFX A7");
@@ -94,46 +111,12 @@ public class GUI extends Application {
         layout.setPadding(new Insets(10));
         layout.setAlignment(Pos.CENTER);
 
-        // Here you can add your components, like TextFields, TableViews, etc. to the layout
-        // based on the controller or the index
-        // ...
-
-        // add a textField with the number of prgStates from repo
+        // getting the repo from the controller
         IRepo repo = controller.getRepo();
-        TextField prgStatesNr = new TextField("Number of program States = " + repo.getPrgList().size());
-        prgStatesNr.setEditable(false);
-        prgStatesNr.prefWidthProperty().bind(prgStatesNr.textProperty().length().multiply(7)); // make it adjust the length of the text
-        layout.getChildren().add(prgStatesNr);
+        currentPrgState = repo.getPrgList().get(0);
 
-//        // Heap Table
-//        MyIHeap<Integer, Value> heap = repo.getPrgList().get(0).getHeap();
-//        List<Integer> memAddresses = (List<Integer>) heap.getAllKeys();
-//        List<String> memValues = StreamSupport.stream(heap.getAllValues().spliterator(), false)
-//                .map(Object::toString)
-//                .collect(Collectors.toList());
-//
-//
-//        TableView<HeapTableRowModel> heapTable = new TableView<>();
-//        heapTable.setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY);
-//
-//        // Define the columns
-//        TableColumn<HeapTableRowModel, Integer> memAddressesCol = new TableColumn<>("Column 1");
-//        memAddressesCol.setCellValueFactory(new PropertyValueFactory<>("Addresses"));
-//
-//        TableColumn<HeapTableRowModel, String> memValuesCol = new TableColumn<>("Column 2");
-//        memValuesCol.setCellValueFactory(new PropertyValueFactory<>("Values"));
-//
-////      Add the columns to the table
-//        heapTable.getColumns().add(memAddressesCol);
-//        heapTable.getColumns().add(memValuesCol);
-//
-//        // Create a list to hold the data
-//        ObservableList<HeapTableRowModel> data = FXCollections.observableArrayList();
-//        for (int i = 0; i < memAddresses.size(); ++i){
-//            data.add(new HeapTableRowModel(memAddresses.get(i), memValues.get(i)));
-//        }
-//        heapTable.setItems(data);
-//        layout.getChildren().add(heapTable);
+        // create the skeleton for the GUI
+        createSkeleton(layout, controller, repo);
 
         // Create a scene with the layout
         Scene scene = new Scene(layout, 400, 400);
@@ -141,6 +124,245 @@ public class GUI extends Application {
         // Set the scene to the stage and show the stage
         stage.setScene(scene);
         stage.show();
+    }
+
+    void createSkeleton(VBox layout, Controller controller, IRepo repo) {
+        // add a textField with the number of prgStates from repo
+        createNrProgramStates(layout, repo);
+
+        // add the heap table
+        createHeapTable(layout);
+
+        // add the outList
+        createOutList(layout);
+
+        // add the fileTable
+        createFileTable(layout);
+
+        // add the prgStatesIds + symTable + exeStack
+        createPrgStateIds(layout, repo);
+
+        // add the runOneStep button
+        addRunOneStepButton(layout, controller, repo);
+    }
+
+    void updateSkeleton(IRepo repo) {
+        updateNrProgramStates(repo);
+        updateHeapTable(repo);
+        updateOutList(repo);
+        updateFileTable(repo);
+        updatePrgStateIds(repo);
+        updateSymTable();
+        updateExeStack();
+    }
+
+    private void createNrProgramStates(VBox layout, IRepo repo) {
+        prgStatesNr = new TextField("Number of program States = " + repo.getPrgList().size());
+        prgStatesNr.setEditable(false);
+        prgStatesNr.prefWidthProperty().bind(prgStatesNr.textProperty().length().multiply(7)); // make it adjust the length of the text
+        layout.getChildren().add(prgStatesNr);
+    }
+
+    private void updateNrProgramStates(IRepo repo) {
+        prgStatesNr.setText("Number of program States = " + repo.getPrgList().size());
+    }
+
+    private void createHeapTable(VBox layout) {
+        heapTable = new TableView<>();
+        heapTable.setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY);
+
+        // Define the columns
+        TableColumn<HeapTableRowModel, Integer> memAddressesCol = new TableColumn<>("Addresses");
+        memAddressesCol.setCellValueFactory(new PropertyValueFactory<>("addresses"));
+
+        TableColumn<HeapTableRowModel, String> memValuesCol = new TableColumn<>("Values");
+        memValuesCol.setCellValueFactory(new PropertyValueFactory<>("values"));
+
+        // Add the columns to the table
+        heapTable.getColumns().add(memAddressesCol);
+        heapTable.getColumns().add(memValuesCol);
+
+        // Create a list to hold the data
+        ObservableList<HeapTableRowModel> data = FXCollections.observableArrayList();
+
+        heapTable.setItems(data);
+        Label title = new Label("Heap Table");
+        layout.getChildren().addAll(title, heapTable);
+    }
+
+    private void updateHeapTable(IRepo repo) {
+        // Heap Table
+        MyIHeap<Integer, Value> heap = repo.getPrgList().get(0).getHeap();
+        //noinspection SimplifyStreamApiCallChains
+        List<Integer> memAddresses = StreamSupport.stream(heap.getAllKeys().spliterator(), false)
+                .collect(Collectors.toList());
+
+        //noinspection SimplifyStreamApiCallChains
+        List<String> memValues = StreamSupport.stream(heap.getAllValues().spliterator(), false)
+                .map(Object::toString)
+                .collect(Collectors.toList());
+
+        heapTable.getItems().clear();
+        ObservableList<HeapTableRowModel> data = FXCollections.observableArrayList();
+        for (int i = 0; i < memAddresses.size(); ++i) {
+            data.add(new HeapTableRowModel(memAddresses.get(i), memValues.get(i)));
+        }
+        heapTable.setItems(data);
+    }
+
+    void createOutList(VBox layout) {
+        /* Adding the OutList to the layout */
+        ObservableList<String> data = FXCollections.observableArrayList();
+
+        outListView = new ListView<>(data);
+
+        // Create a Label for the title
+        Label title = new Label("OUT List");
+        layout.getChildren().addAll(title, outListView);
+    }
+
+    void updateOutList(IRepo repo) {
+        List<String> outList = repo.getPrgList().get(0).getOut().getContent().stream()
+                .map(Object::toString)
+                .collect(Collectors.toList());
+
+        outListView.getItems().clear();
+        ObservableList<String> data = FXCollections.observableArrayList();
+        data.addAll(outList);
+        outListView.setItems(data);
+    }
+
+    void createFileTable(VBox layout) {
+        /* Adding the FileTable to the layout */
+        fileTableListView = new ListView<>(FXCollections.observableArrayList());
+
+        // Create a Label for the title
+        Label title = new Label("File Table");
+        layout.getChildren().addAll(title, fileTableListView);
+    }
+
+    void updateFileTable(IRepo repo) {
+        List<String> fileTable = repo.getPrgList().get(0).getFileTable().getContent().keySet().stream()
+                .map(Object::toString)
+                .collect(Collectors.toList());
+
+        fileTableListView.getItems().clear();
+        ObservableList<String> data = FXCollections.observableArrayList();
+        data.addAll(fileTable);
+        fileTableListView.setItems(data);
+    }
+
+    TableView<SymTableRowModel> createSymTableView() {
+        TableView<SymTableRowModel> symTable = new TableView<>();
+        symTable.setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY);
+
+        // Define the columns
+        TableColumn<SymTableRowModel, String> varNameCol = new TableColumn<>("Variable Name");
+        varNameCol.setCellValueFactory(new PropertyValueFactory<>("variableName"));
+
+        TableColumn<SymTableRowModel, String> valueCol = new TableColumn<>("Value");
+        valueCol.setCellValueFactory(new PropertyValueFactory<>("value"));
+
+        // Add the columns to the table
+        symTable.getColumns().add(varNameCol);
+        symTable.getColumns().add(valueCol);
+
+        return symTable;
+    }
+
+    void updateSymTable() {
+        symTable.getItems().clear();
+        // Create a list to hold the data
+        ObservableList<SymTableRowModel> data = FXCollections.observableArrayList();
+        for (String key : currentPrgState.getSymTable().getAllKeys()) {
+            data.add(new SymTableRowModel(key, currentPrgState.getSymTable().get(key).toString()));
+        }
+        symTable.setItems(data);
+    }
+
+    void updateExeStack() {
+        exeStackView.getItems().clear();
+
+        ObservableList<String> exeItems = FXCollections.observableArrayList();
+        exeItems.addAll(currentPrgState.getStk().toStrList());
+
+        exeStackView.setItems(exeItems);
+    }
+
+    void createPrgStateIds(VBox layout, IRepo repo) {
+        /* Adding the PrgStatesIds to the layout */
+
+        // PrgStatesIds
+        List<PrgState> prgStates = repo.getPrgList();
+        List<String> prgStatesIds = prgStates.stream()
+                .map(PrgState::getStrID)
+                .collect(Collectors.toList());
+
+        // Convert the List to an ObservableList
+        ObservableList<String> items = FXCollections.observableArrayList(prgStatesIds);
+        ObservableList<String> exeItems = FXCollections.observableArrayList();
+
+        // Create the program states list view
+        programsView = new ListView<>(items);
+
+        // Create the execution stack list view
+        exeStackView = new ListView<>(exeItems);
+
+        // Getting the SymTableView
+        symTable = createSymTableView();
+
+        programsView.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {
+                    if (newValue == null) {
+                        return;
+                    }
+
+                    // Get the selected PrgState
+                    currentPrgState = repo.getPrgById(newValue);
+
+                    // Populate the SymTable
+                    updateSymTable();
+
+                    // Populate the execution stack
+                    updateExeStack();
+                });
+
+        // Create a Label for the title
+        Label title = new Label("Programs List");
+        Label tableTitle = new Label("Symbol Table");
+        Label exeTitle = new Label("Exe Stack");
+        layout.getChildren().addAll(title, programsView, tableTitle, symTable, exeTitle, exeStackView);
+    }
+
+    void updatePrgStateIds(IRepo repo) {
+        // PrgStatesIds
+        List<PrgState> prgStates = repo.getPrgList();
+        List<String> prgStatesIds = prgStates.stream()
+                .map(PrgState::getStrID)
+                .collect(Collectors.toList());
+
+        programsView.getItems().clear();
+        programsView.getItems().addAll(prgStatesIds);
+    }
+
+    void addRunOneStepButton(VBox layout, Controller controller, IRepo repo) {
+        ExecutorService executor = Executors.newFixedThreadPool(2);
+        repo.loadOgPrgList(); // we keep a copy of the original program
+
+        Button runOneStepButton = new Button("Run One Step");
+        runOneStepButton.setOnAction(event -> {
+            try {
+                controller.oneStepGUI(executor, repo);
+                updateSkeleton(repo);
+            } catch (RuntimeException e) {
+                // Make a popup to show the message. Like some sort or alert
+                e.printStackTrace();
+            } catch (ProgramEndedExc e) {
+                repo.setOgPrgList(); // We Reset The Program
+                // Make a popup to show the message. Like some sort or alert
+                e.printStackTrace();
+            }
+        });
+        layout.getChildren().add(runOneStepButton);
     }
 
     public static void main(String[] args) {

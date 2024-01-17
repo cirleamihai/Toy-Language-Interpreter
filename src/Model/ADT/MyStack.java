@@ -1,5 +1,7 @@
 package Model.ADT;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Stack;
 
 public class MyStack<T> implements MyIStack<T> {
@@ -35,5 +37,15 @@ public class MyStack<T> implements MyIStack<T> {
         }
 
         return s.toString();
+    }
+
+    public List<String> toStrList() {
+        List<String> strStackList = new ArrayList<>();
+
+        for (int i = stack.size() - 1; i >= 0; --i) {
+            strStackList.add(stack.get(i).toString());
+        }
+
+        return strStackList;
     }
 }

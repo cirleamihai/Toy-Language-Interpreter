@@ -1,5 +1,7 @@
 package Model.ADT;
 
+import java.util.List;
+
 public interface MyIStack<T> {
     void push(T v);
 
@@ -8,4 +10,6 @@ public interface MyIStack<T> {
     boolean isEmpty();
 
     String toFile();
+
+    List<String> toStrList();
 }

@@ -38,6 +38,14 @@ public class PrgState {
         return heap;
     }
 
+    public Integer getId() {
+        return id;
+    }
+
+    public String getStrID() {
+        return "Program ID " + id.toString();
+    }
+
     public Boolean isNotCompleted() {
         return !stk.isEmpty();
     }
