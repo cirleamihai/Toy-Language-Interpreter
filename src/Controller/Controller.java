@@ -93,7 +93,7 @@ public class Controller {
 
         // one step for all programs
         oneStepForAllPrgGUI(prgList, executor, repo);
-        prgList = removeCompletedPrg(repo.getPrgList());
+        removeCompletedPrg(repo.getPrgList());
     }
 
     void oneStepForAllPrgGUI(List<PrgState> prgList, ExecutorService executor, IRepo repo) throws RuntimeException {

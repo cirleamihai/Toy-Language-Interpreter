@@ -354,15 +354,32 @@ public class GUI extends Application {
                 controller.oneStepGUI(executor, repo);
                 updateSkeleton(repo);
             } catch (RuntimeException e) {
-                // Make a popup to show the message. Like some sort or alert
+                errorPopUp("Runtime Error", "Runtime Error", e.getMessage());
+
+                // close the window
+                Stage stage = (Stage) runOneStepButton.getScene().getWindow();
+                stage.close();
+
                 e.printStackTrace();
+
             } catch (ProgramEndedExc e) {
                 repo.setOgPrgList(); // We Reset The Program
-                // Make a popup to show the message. Like some sort or alert
-                e.printStackTrace();
+                errorPopUp("Program Ended", "Please close this window", e.getMessage());
+
+                // close the window
+                Stage stage = (Stage) runOneStepButton.getScene().getWindow();
+                stage.close();
             }
         });
         layout.getChildren().add(runOneStepButton);
+    }
+
+    void errorPopUp(String errorTitle, String headerText, String contextMessage) {
+        Alert alert = new Alert(Alert.AlertType.ERROR);
+        alert.setTitle(errorTitle);
+        alert.setHeaderText(headerText);
+        alert.setContentText(contextMessage);
+        alert.showAndWait();
     }
 
     public static void main(String[] args) {
