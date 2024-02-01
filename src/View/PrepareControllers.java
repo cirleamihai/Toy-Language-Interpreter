@@ -164,6 +164,45 @@ public class PrepareControllers {
         }
         Controller ctrl5 = new Controller(repo5);
 
+        // int a; a=1; int b; b=2; int c; c=5; switch(a*10) {
+        // (case (b*c) print(a); print(b);)
+        // (case (10) print(100); print(200);}
+        // (default print(300);) }
+        // print(300);
+        IStmt exam1 = new CompStmt(new VarDeclStmt("a", new IntType()),
+                new CompStmt(new VarDeclStmt("b", new IntType()), new CompStmt(
+                        new VarDeclStmt("c", new IntType()), new CompStmt(
+                        new AssignStmt("a", new ValueExp(new IntValue(1))), new CompStmt(
+                        new AssignStmt("b", new ValueExp(new IntValue(2))), new CompStmt(
+                        new AssignStmt("c", new ValueExp(new IntValue(5))), new CompStmt(
+                        new switchStmt(new ArithExp('*', new VarExp("a"),
+                                new ValueExp(new IntValue(10))), new ArithExp('*', new VarExp("b"),
+                                new VarExp("c")), new CompStmt(new PrintStmt(new VarExp("a")),
+                                new PrintStmt(new VarExp("b"))), new ValueExp(new IntValue(10)),
+                                new CompStmt(new PrintStmt(new ValueExp(new IntValue(100))),
+                                        new PrintStmt(new ValueExp(new IntValue(200)))),
+                                new PrintStmt(new ValueExp(new IntValue(300)))),
+                        new PrintStmt(new ValueExp(new IntValue(300))))))))));
+        // Creating the program state with stack, SymTbl, etc
+        MyStack<IStmt> stackExam1 = new MyStack<>();
+        MyDictionary<String, Value> dictExam1 = new MyDictionary<>();
+        MyList<Value> listExam1 = new MyList<>();
+        FileTable<StringValue, BufferedReader> fileTableExam1 = new FileTable<>();
+        Heap heapExam1 = new Heap();
+        exam1.typecheck(new MyDictionary<>());
+        PrgState prgExam1 = new PrgState(stackExam1, dictExam1, listExam1, fileTableExam1, heapExam1, exam1);
+        List<PrgState> programExam1 = new ArrayList<>();
+        programExam1.add(prgExam1);
+
+        IRepo repoExam1 = null;
+        try {
+            repoExam1 = new Repo(programExam1, ".\\Files\\logExamSwitch.txt");
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+            System.exit(1);
+        }
+        Controller ctrlExam1 = new Controller(repoExam1);
+
         controllers = new ArrayList<>();
         programStatements = new ArrayList<>();
         controllers.add(ctrl1);
@@ -180,6 +219,9 @@ public class PrepareControllers {
 
         controllers.add(ctrl5);
         programStatements.add(ex5);
+
+        controllers.add(ctrlExam1);
+        programStatements.add(exam1);
     }
 
     public List<Controller> getControllers() {

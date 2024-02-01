@@ -62,4 +62,8 @@ public class LogicExp implements Exp {
     public Exp deepCopy() {
         return new LogicExp(op == 1 ? "&&" : "||", e1.deepCopy(), e2.deepCopy());
     }
+
+    public String toString() {
+        return "(" + e1.toString() + " " + (op == 1 ? "&&" : "||") + " " + e2.toString() + ")";
+    }
 }
